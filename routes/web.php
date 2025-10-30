@@ -15,4 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
+    
+});
+
+Route::post('/menu', function () {
+    return 'Menu route works!';
+})->name('menu');
+
+Route::get('/forgot-password', function () {
+    return view('auth.forgot-password');
+})->name('password.request');
+
+
+
+Route::get('/available-plots', function () {
+    return view('user.frontpage.available-plots.main');
 });

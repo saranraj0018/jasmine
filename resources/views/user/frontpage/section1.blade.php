@@ -1,6 +1,10 @@
   <section>
         <!--banner section-->
-        <img src="./img/Group 35430 (3).png" class="w-full" alt="banner">
+        
+        <img id="bannerImage" src="./img/Group 35430 (3).png" class="w-full cursor-pointer" alt="banner">
+        
+
+
     </section>
  
  <!--second section-->
@@ -33,3 +37,10 @@
      <section class="mx-auto lg:max-w-5xl lg:px-20 md:px-20 px-5">
         <img src="./img/Group 35308 (2).png" class="w-full" alt="img">
     </section>
+   <script>
+  const banner = document.getElementById('bannerImage');
+  banner.addEventListener('click', () => {
+    window.location.href = '/available-plots';  // ✅ Correct syntax
+  });
+</script>
+
