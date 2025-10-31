@@ -1,16 +1,18 @@
-const loginBtn = document.getElementById('loginBtn');
-  const loginModal = document.getElementById('loginModal');
-  const closeModal = document.getElementById('closeModal');
+$(document).ready(function () {
 
-  loginBtn.addEventListener('click', () => {
-    loginModal.classList.remove('hidden');
+  $("#loginBtn, #loginBtnMobile").click(function () {
+    $("#loginModal").removeClass("hidden");
   });
 
-  closeModal.addEventListener('click', () => {
-    loginModal.classList.add('hidden');
+  $("#closeModal").click(function () {
+    $("#loginModal").addClass("hidden");
   });
 
-  // Optional: close modal on background click
-  loginModal.addEventListener('click', (e) => {
-    if (e.target === loginModal) loginModal.classList.add('hidden');
+  // close on background click
+  $("#loginModal").click(function (e) {
+    if ($(e.target).is("#loginModal")) {
+      $("#loginModal").addClass("hidden");
+    }
   });
+
+});

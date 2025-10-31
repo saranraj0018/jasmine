@@ -9,7 +9,7 @@
  
  <!--second section-->
     <section class="my-10">
-        <h2 class="text-center font-[Inter] font-semibold  text-xl md:text-2xl lg:text-2xl text-[#0D1933] ">How it Works
+        <h2 class="text-center font-Poppins font-semibold  text-xl md:text-2xl lg:text-2xl text-[#0D1933] ">How it Works
         </h2>
         <p class="text-center font-[Inter] font-medium lg:text-sm md:text-sm text-xs text-[#254693]  px-3 py-3 ">Get your
             banner advertising campaign running in just three simple steps</p>
@@ -36,6 +36,10 @@
 
      <section class="mx-auto lg:max-w-5xl lg:px-20 md:px-20 px-5">
         <img src="./img/Group 35308 (2).png" class="w-full" alt="img">
+    </section>
+    <section class="mx-auto max-w-5xl bg-[url('./img/Rectangle 5 (1).png')] bg-cover bg-center bg-no-repeat relative py-10 " >
+           <h2 class="text-center text-white font-medium">Why choose Jasmine ?</h2>
+        
     </section>
    <script>
   const banner = document.getElementById('bannerImage');

@@ -1,4 +1,4 @@
-<header class="fixed top-0 w-full z-10 bg-white shadow-sm">
+<header class="fixed top-0 w-full z-10 ">
   <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
     <!-- Logo -->
@@ -9,6 +9,7 @@
     <!-- Desktop Menu -->
     <nav class="hidden md:flex items-center space-x-2 bg-white rounded-full px-2 py-1 shadow-sm">
       <a href="{{ url('/') }}" class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">Home</a>
+      <a href="{{ url('/') }}" class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">Available Plots</a>
       <a href="#about" class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">About Us</a>
       <a href="#services" class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">Services</a>
       <a href="#contact" class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">Contact</a>
@@ -17,14 +18,16 @@
 
     <!-- Desktop Buttons -->
     <div class="hidden md:flex items-center space-x-3">
-      <button id="togglePopup"
-        class="bg-white text-gray-800 px-5 py-2 rounded-full shadow hover:bg-gray-100 transition">
-        Login
-      </button>
+     <button id="loginBtn"
+  class="bg-white text-gray-800 px-5 py-2 rounded-full shadow hover:bg-gray-100 transition">
+  Login
+</button>
+
       <a href="{{ route('register') }}" 
-        class="bg-linear-to-r from-blue-700 to-indigo-800 text-xs text-white px-5 py-2 rounded-full shadow hover:opacity-90 transition">
-        Sign Up
-      </a>
+   class="bg-gradient-to-r from-[#0033A8] to-[#001442] text-xs text-white px-5 py-2 rounded-full shadow hover:opacity-90 transition">
+   Sign Up
+</a>
+
     </div>
 
     <!-- Mobile Menu Button -->
@@ -48,10 +51,10 @@
         <button id="loginBtn" class="px-5 py-2 bg-white text-gray-800 rounded-full hover:bg-gray-100 transition">
           Login
         </button>
-        <a href="{{ route('register') }}"
-          class="bg-linear-to-r from-blue-700 to-indigo-800 text-white px-5 py-2 rounded-full shadow hover:opacity-90 transition">
+        <button id="signupBtn"
+          class="bg-linear-to-r from-[#0033A8] to-[#001442] text-white px-5 py-2 rounded-full shadow hover:opacity-90 transition">
           Sign Up
-        </a>
+</button>
       </div>
     </nav>
   </div>
@@ -59,46 +62,54 @@
 
 <!-- Login Modal -->
 <div id="loginModal"
-  class="hidden fixed inset-0 bg-[#0000008a] flex items-center justify-center z-50">
-  <div class="bg-linear-to-t from-[#ffffff] to-[#E5F6FF] p-6 rounded-3xl w-[90%] md:w-1/2 relative shadow-xl">
+  class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+  
+  <div class="bg-gradient-to-t from-[#ffffff] to-[#E5F6FF] p-6 rounded-3xl w-[90%] md:w-1/2 relative shadow-xl">
 
     <!-- Close Button -->
     <button id="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
 
-    <h2 class="text-2xl font-bold text-center bg-linear-to-t from-[#0033A8] to-[#001442] bg-clip-text text-transparent mb-4">
+    <h2 class="text-2xl font-bold text-center bg-gradient-to-t from-[#0033A8] to-[#001442] bg-clip-text text-transparent mb-4">
       WELCOME BACK
     </h2>
-    <p class="text-center text-sm text-gray-700 mb-4">Login to your Banner Book account</p>
+
+    <p class="text-center text-sm text-black mb-4">
+      Login to your Banner Book account
+    </p>
 
     <form action="{{ route('menu') }}" method="POST" class="space-y-4">
       @csrf
+
       <div class="mb-3 mt-5">
-        <label class="block text-sm font-medium text-[#1C356E] mb-1">Email</label>
+        <label class=" fa fa-envelope block text-sm font-medium text-[#1C356E] mb-1">   Email</label>
         <input type="email" placeholder="Enter Your Email"
-          class="w-full border text-sm font-light text-black border-gray-300 bg-white rounded-3xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required>
       </div>
 
       <div class="mb-3">
-        <label class="block text-sm font-medium text-[#1C356E] mb-1">Password</label>
+        <label class=" fa fa-lock block text-sm font-medium text-[#1C356E] mb-1">    Password</label>
         <input type="password" placeholder="Enter Your Password"
-          class="w-full border text-sm font-light text-black border-gray-300 bg-white rounded-3xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required>
       </div>
 
-      <a href="{{ route('password.request') }}" class="text-xs font-normal text-end block text-[#1C356E]">Forgot Password?</a>
+      <a href="{{ route('password.request') }}" class="text-xs font-normal text-end block text-[#1C356E]">
+        Forgot Password?
+      </a>
 
       <div class="flex justify-center">
         <button type="submit"
-          class="w-[10rem] bg-linear-to-b from-[#0033A8] to-[#001442] text-white text-sm font-medium rounded-3xl py-2 hover:opacity-90 transition">
+          class="w-[10rem] bg-gradient-to-b from-[#0033A8] to-[#001442] text-white text-sm font-medium rounded-3xl py-2 hover:opacity-90 transition">
           Login
         </button>
       </div>
 
       <p class="text-center text-xs text-black font-normal my-3">
         Don’t have an account? 
-        <a href="{{ route('register') }}" class="text-xs text-indigo-700 font-medium">Sign up here</a>
+        <a href="{{ route('register') }}" class="text-xs text-black font-medium">Sign up here</a>
       </p>
     </form>
+
   </div>
 </div>
