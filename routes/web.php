@@ -14,8 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-    
+    return view('home'); // ✅ 
 });
 
 Route::post('/menu', function () {
@@ -26,8 +25,15 @@ Route::get('/forgot-password', function () {
     return view('auth.forgot-password');
 })->name('password.request');
 
-
-
 Route::get('/available-plots', function () {
     return view('user.frontpage.available-plots.main');
 });
+
+// ✅ Added missing routes
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register');
