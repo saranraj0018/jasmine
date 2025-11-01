@@ -3,12 +3,13 @@
         <p class="text-sm Font-[Inter] font-normal text-black py-3">Browse and book advertising banner plots across the
             city</p>
     </section>
+    
     <section class="py-15 max-w-7xl lg:px-12 md:px-5 px-5">
         <div class="grid grid-cols-12 lg:gap-7 md:gap-4 gap-5">
             <div class=" col-span-12 lg:col-span-4 md:col-span-4  bg-[#EEF7FF] py-3 px-3 md:py-5 px-5 rounded-2xl ">
                 <div class="flex justify-between gap-0">
                     <h3 class="lg:text-xl  text-sm font-[Inter] font-medium text-[#234693]">Ukkadam Lake</h3>
-                    <div class="flex items-center space-x-2 bg-green-200 text-green-700 px-3 py-1 rounded-full w-fit">
+                    <div class="flex items-center space-x-2 bg-green-200 text-[#05BD49] px-3 py-1 rounded-full w-fit">
                         <span class="w-3 h-3 bg-green-500 rounded-full"></span>
                         <span class=" text-xs lg:text-sm font-[Inter] font-medium">Available</span>
                     </div>
@@ -47,9 +48,9 @@
             <div class=" col-span-12 lg:col-span-4 md:col-span-4  bg-[#EEF7FF] py-3 px-3 md:py-5 px-5 rounded-2xl ">
                 <div class="flex justify-between gap-0">
                     <h3 class="lg:text-xl  text-sm font-[Inter] font-medium text-[#234693]">RS Puram Junction</h3>
-                    <div class="flex items-center space-x-2 bg-green-200 text-green-700 px-3 py-1 rounded-full w-fit">
-                        <span class="w-3 h-3 bg-green-500 rounded-full"></span>
-                        <span class=" text-xs lg:text-sm">Available</span>
+                    <div class="flex items-center space-x-2 bg-[#FFE6A8] text-green-700 px-3 py-1 rounded-full w-fit">
+                        <span class="w-3 h-3 bg-[#DBA002] rounded-full"></span>
+                        <span class=" text-xs lg:text-sm text-[#DBA002]">Limited</span>
                     </div>
                 </div>
                 <div class="flex items-center space-x-2 py-2 text-black  ">
@@ -86,9 +87,9 @@
            <div class=" col-span-12 lg:col-span-4 md:col-span-4 bg-[#EEF7FF] py-3 px-3 md:py-5 px-5 rounded-2xl ">
                 <div class="flex justify-between gap-0">
                     <h3 class="lg:text-xl  text-sm font-[Inter] font-medium text-[#234693]">Gandhipuram Signal</h3>
-                    <div class="flex items-center space-x-2 bg-green-200 text-green-700 px-3 py-1 rounded-full w-fit">
-                        <span class="w-3 h-3 bg-green-500 rounded-full"></span>
-                        <span class=" text-xs lg:text-sm">Available</span>
+                    <div class="flex items-center space-x-2 bg-[#FFB5B5] text-[#EF4343] px-3 py-1 rounded-full w-fit">
+                        <span class="w-3 h-3 bg-[#EF4343] rounded-full"></span>
+                        <span class=" text-xs lg:text-sm">UnAvailable</span>
                     </div>
                 </div>
                 <div class="flex items-center space-x-2 py-2 text-black  ">
@@ -130,9 +131,9 @@
             <div class=" col-span-12 lg:col-span-4 md:col-span-4  bg-[#EEF7FF] py-3 px-3 md:py-5 px-5 rounded-2xl ">
                 <div class="flex justify-between gap-0">
                     <h3 class="lg:text-xl  text-sm font-[Inter] font-medium text-[#234693]">RS Puram Junction</h3>
-                    <div class="flex items-center space-x-2 bg-green-200 text-green-700 px-3 py-1 rounded-full w-fit">
-                        <span class="w-3 h-3 bg-green-500 rounded-full"></span>
-                        <span class=" text-xs lg:text-sm">Available</span>
+                    <div class="flex items-center space-x-2 bg-[#FFE6A8] text-[#DBA002] px-3 py-1 rounded-full w-fit">
+                        <span class="w-3 h-3 bg-[#DBA002] rounded-full"></span>
+                        <span class=" text-xs lg:text-sm">Limited</span>
                     </div>
                 </div>
                 <div class="flex items-center space-x-2 py-2 text-black  ">
@@ -169,8 +170,8 @@
             <div class=" col-span-12 lg:col-span-4 md:col-span-4  bg-[#EEF7FF] py-3 px-3 md:py-5 px-5 rounded-2xl ">
                 <div class="flex justify-between gap-0">
                     <h3 class="lg:text-xl  text-sm font-[Inter] font-medium text-[#234693]">RS Puram Junction</h3>
-                    <div class="flex items-center space-x-2 bg-green-200 text-green-700 px-3 py-1 rounded-full w-fit">
-                        <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                    <div class="flex items-center space-x-2 bg-[#FFE6A8] text-[#DBA002] px-3 py-1 rounded-full w-fit">
+                        <span class="w-3 h-3 bg-[#DBA002] rounded-full"></span>
                         <span class=" text-xs lg:text-sm">Available</span>
                     </div>
                 </div>
@@ -208,7 +209,7 @@
            <div class=" col-span-12 lg:col-span-4 md:col-span-4 bg-[#EEF7FF] py-3 px-3 md:py-5 px-5 rounded-2xl ">
                 <div class="flex justify-between gap-0">
                     <h3 class="lg:text-xl  text-sm font-[Inter] font-medium text-[#234693]">Ukkadam Lake</h3>
-                    <div class="flex items-center space-x-2 bg-green-200 text-green-700 px-3 py-1 rounded-full w-fit">
+                    <div class="flex items-center space-x-2 bg-green-200 text-[#05BD49]px-3 py-1 rounded-full w-fit">
                         <span class="w-3 h-3 bg-green-500 rounded-full"></span>
                         <span class=" text-xs lg:text-sm">Available</span>
                     </div>
@@ -252,9 +253,9 @@
             <div class=" col-span-12 lg:col-span-4 md:col-span-4  bg-[#EEF7FF] py-3 px-3 md:py-5 px-5 rounded-2xl ">
                 <div class="flex justify-between gap-0">
                     <h3 class="lg:text-xl  text-sm font-[Inter] font-medium text-[#234693]">Gandhipuram Signal</h3>
-                    <div class="flex items-center space-x-2 bg-green-200 text-green-700 px-3 py-1 rounded-full w-fit">
-                        <span class="w-3 h-3 bg-green-500 rounded-full"></span>
-                        <span class=" text-xs lg:text-sm">Available</span>
+                    <div class="flex items-center space-x-2 bg-[#FFB5B5] text-[#EF4343] px-3 py-1 rounded-full w-fit">
+                        <span class="w-3 h-3 bg-[#EF4343] rounded-full"></span>
+                        <span class=" text-xs lg:text-sm">UnAvailable</span>
                     </div>
                 </div>
                 <div class="flex items-center space-x-2 py-2 text-black  ">

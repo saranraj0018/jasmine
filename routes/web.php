@@ -40,3 +40,24 @@ Route::get('/register', function () {
 Route::get('/poleads', function () {
     return view('user.frontpage.available-plots.poleads');
 })->name('poleads');
+Route::get('/slot-booking', function () {
+    return view('user.frontpage.available-plots.slot_booking');
+})->name('slot.booking');
+Route::get('/Select_Duration', function () {
+    return view('user.frontpage.available-plots.Select_Duration');
+})->name('Select_Duration');
+
+use App\Http\Controllers\AdvertisementController;
+use App\Http\Controllers\BookingController;
+
+
+
+Route::get('/ads', [AdvertisementController::class, 'index'])->name('ads.index');
+Route::get('/book/{area}', [AdvertisementController::class, 'book'])->name('ads.book');
+
+Route::post('/booking/confirm', [BookingController::class, 'confirm'])->name('booking.confirm');
+Route::get('/booking/summary', function () {
+    return view('booking.summary');
+})->name('booking.summary');
+
+

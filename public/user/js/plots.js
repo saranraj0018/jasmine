@@ -46,3 +46,34 @@ $(document).ready(function () {
   });
 
 });
+
+//slot-booking
+$(document).ready(function () {
+
+    let selectedSeats = [];
+
+    $('.seat-btn').on('click', function () {
+        const seat = $(this).data('seat');
+
+        if (selectedSeats.includes(seat)) {
+            // Remove seat
+            selectedSeats = selectedSeats.filter(s => s !== seat);
+
+            $(this)
+                .removeClass('bg-blue-600 text-white border-blue-600')
+                .addClass('border-gray-300 text-gray-600');
+
+        } else {
+            // Add seat
+            selectedSeats.push(seat);
+
+            $(this)
+                .addClass('bg-blue-600 text-white border-blue-600')
+                .removeClass('border-gray-300 text-gray-600');
+        }
+
+        $('#selectedSeats').val(selectedSeats.join(','));
+    });
+
+});
+
