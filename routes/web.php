@@ -61,3 +61,9 @@ Route::get('/booking/summary', function () {
 })->name('booking.summary');
 
 
+Route::get('/about', function () {
+    return view('user.frontpage.about.main');
+});
+Route::get('/Services', function () {
+    return view('user.frontpage.about.Services');
+});
