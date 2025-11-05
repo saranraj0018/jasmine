@@ -89,11 +89,17 @@
      </div>
 
      <!-- Button -->
-     <div class="w-full flex justify-center mt-10">
-         <button
-             class="px-16 py-3 bg-gradient-to-b from-[#0033A8] to-[#001442] text-white font-medium rounded-full shadow hover:from-blue-800 hover:to-blue-950 transition">
-             Next
-         </button>
-     </div>
+     <<div class="text-center mt-8">
+                     <div class="flex justify-center">
+                         <div class="text-center mx-auto">
+                             <a href="{{ route('payment') }}"
+                                 class="w-40 py-2.5 px-3.5 rounded-full bg-gradient-to-b from-[#0033A8] to-[#001442] text-white font-medium shadow hover:from-blue-800 hover:to-blue-950 transition flex items-center justify-center">
+                                 Next
+                             </a>
+
+
+                         </div>
+                     </div>
+                 </div>
 
  </div>

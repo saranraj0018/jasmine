@@ -180,7 +180,7 @@
           <div class="flex flex-col  ">
             <div class="flex  mb-3 gap-4 bg-gradient-to-t from-[#ffffff] to-[#E5F6FF] relative rounded-2xl py-5 px-5">
               <img src="./img/image 106.png" class="w [-10rem]" alt="img"/>
-              <h4 class="text-[#234693] font-semibold text-lg mb-1">Visual Markers</h4>
+              <h4 class="text-[#234693] font-semibold text-lg mb-1"><a href="{{ route('Visual_Markers') }}">Visual Markers</a></h4>
             </div>
             <p class="text-black  text-left text-sm pt-3">
              High-Visibility markers for enhanced brand presence and wayfinding

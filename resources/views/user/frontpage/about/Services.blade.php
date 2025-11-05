@@ -14,12 +14,12 @@
 </section>
 
 <!-- section2-->
-<section class="mx-auto max-w-6xl py-10  ">
+<section class="mx-auto max-w-6xl py-10 px-7  ">
     <div class="grid grid-cols-12 gap-0">
-        <div class="col-span-3">
+        <div class="col-span-12 md:col-span-3 lg:col-span-3">
             <img src="./img/services1.png" class="" alt="img" />
         </div>
-        <div class="col-span-9">
+        <div class="col-span-12 md:col-span-9 lg:col-span-9">
             <h2 class="text-lg text-black font-medium font-sans">We run all kinds of <span class="text-[#234693]">Advertisement services</span> that vow your success</h2>
             <div class="bg-gradient-to-t from-white to-[#E5F6FF] py-4 px-7 rounded-xl mt-5">
                 <h2 class="text-xl font-semibold font-sans text-[#234693]">ADVERTISE YOUR BRANDS</h2>
@@ -31,7 +31,7 @@
     </div>
 <!--second one-->
     <div class="grid grid-cols-12 py-10">
-        <div class="col-span-9">
+        <div class="col-span-12 md:col-span-9 lg:col-span-9">
             <h2 class="text-lg text-black font-medium font-sans">Digital Media & TV Channels</h2>
             <div class="bg-gradient-to-t from-white to-[#E5F6FF] py-4 px-7 rounded-xl mt-5">
                 <h2 class="text-xl font-semibold font-sans text-[#234693]">Visual Media</h2>
@@ -42,16 +42,16 @@
 
             </div>
         </div>
-        <div class="col-span-3">
+        <div class="col-span-12 md:col-span-3 lg:col-span-3">
             <img src="./img/services2.png" class="" alt="img" />
         </div>
     </div>
 
     <div class="grid grid-cols-12 gap-0">
-        <div class="col-span-3">
+        <div class="col-span-12 md:col-span-3 lg:col-span-3">
             <img src="./img/services3.png" class="" alt="img" />
         </div>
-        <div class="col-span-9">
+        <div class="col-span-12 md:col-span-9 lg:col-span-9">
             <h2 class="text-lg text-black font-medium font-sans">Airport Advertising, Bus Shelters, Theatre / Mall Branding.,</h2>
             <div class="bg-gradient-to-t from-white to-[#E5F6FF] py-4 px-7 rounded-xl mt-5">
                 <h2 class="text-xl font-semibold font-sans text-[#234693]">Outdoors</h2>
@@ -64,7 +64,7 @@
 
     <!--second one-->
     <div class="grid grid-cols-12 py-10">
-        <div class="col-span-9">
+        <div class="col-span-12 md:col-span-9 lg:col-span-9">
             <h2 class="text-lg text-black font-medium font-sans">Apartment activity, Theatre Stalls, Expo & event stall, Exclusive events</h2>
             <div class="bg-gradient-to-t from-white to-[#E5F6FF] py-4 px-7 rounded-xl mt-5">
                 <h2 class="text-xl font-semibold font-sans text-[#234693]">Events</h2>
@@ -74,16 +74,16 @@
 
             </div>
         </div>
-        <div class="col-span-3">
+        <div class="col-span-12 md:col-span-3 lg:col-span-3">
             <img src="./img/services4.png" class="" alt="img" />
         </div>
     </div>
 
      <div class="grid grid-cols-12 gap-0">
-        <div class="col-span-3">
+        <div class="col-span-12 md:col-span-3 lg:col-span-3">
             <img src="./img/services5.png" class="" alt="img" />
         </div>
-        <div class="col-span-9">
+        <div class="col-span-12 md:col-span-9 lg:col-span-9">
             <h2 class="text-lg text-black font-medium font-sans">Train, Bus and Auto-Rickshaw</h2>
             <div class="bg-gradient-to-t from-white to-[#E5F6FF] py-4 px-7 rounded-xl mt-5">
                 <h2 class="text-xl font-semibold font-sans text-[#234693]">Transport</h2>
@@ -96,7 +96,7 @@
 
      <!--second one-->
     <div class="grid grid-cols-12 py-10">
-        <div class="col-span-9">
+        <div class="col-span-12 md:col-span-9 lg:col-span-9">
             <h2 class="text-lg text-black font-medium font-sans">FM radio promotes banner ads through audio reach</h2>
             <div class="bg-gradient-to-t from-white to-[#E5F6FF] py-4 px-7 rounded-xl mt-5">
                 <h2 class="text-xl font-semibold font-sans text-[#234693]">FM Radio</h2>
@@ -106,16 +106,16 @@
 
             </div>
         </div>
-        <div class="col-span-3">
+        <div class="col-span-12 md:col-span-3 lg:col-span-3">
             <img src="./img/services6.png" class="" alt="img" />
         </div>
     </div>
 
       <div class="grid grid-cols-12 gap-0">
-        <div class="col-span-3">
+        <div class="col-span-12 md:col-span-3 lg:col-span-3">
             <img src="./img/services7.png" class="" alt="img" />
         </div>
-        <div class="col-span-9">
+        <div class="col-span-12 md:col-span-9 lg:col-span-9">
             <h2 class="text-lg text-black font-medium font-sans">Digital marketing boosts banner reach and visibility</h2>
             <div class="bg-gradient-to-t from-white to-[#E5F6FF] py-4 px-7 rounded-xl mt-5">
                 <h2 class="text-xl font-semibold font-sans text-[#234693]">Digital Marketing</h2>
@@ -129,7 +129,7 @@
 
     <!--second one-->
     <div class="grid grid-cols-12 py-10">
-        <div class="col-span-9">
+        <div class="col-span-12 md:col-span-9 lg:col-span-9">
             <h2 class="text-lg text-black font-medium font-sans">Grow Your Businesses</h2>
             <div class="bg-gradient-to-t from-white to-[#E5F6FF] py-4 px-7 rounded-xl mt-5">
                 <h2 class="text-xl font-semibold font-sans text-[#234693]">Web Design</h2>
@@ -138,19 +138,19 @@
 
             </div>
         </div>
-        <div class="col-span-3">
+        <div class="col-span-12 md:col-span-3 lg:col-span-3">
             <img src="./img/services8.png" class="" alt="img" />
         </div>
     </div>
 </section>
 
 <!--last section-->
-<section class="mx-auto max-w-4xl py-10 ">
-    <div class="bg-[url('./img/banner2.png')] bg-cover bg-no-repeat bg-center rounded-2xl px-10 py-5">
+<section class="mx-auto max-w-3xl py-5  px-7">
+    <div class="bg-[url('./img/banner2.png')] bg-cover bg-no-repeat bg-center rounded-2xl px-10 py-10">
         <h2 class="text-white font-medium font-sans text-3xl text-center">Make a great project with us</h2>
        <p class="text-sm text-white  font-normal font-sans pt-3 text-center">Let's make something beautiful together</p>
       <div class="flex justify-center">
-        <button class="text-center rounded-full mt-3 bg-gradient-to-b py-2 px-20 from-[#A1BDFF] to-[#0048EE] text-white text-sm font-sans font-semibold" >Get In Touch</button>
+        <button class="text-center rounded-full mt-3 bg-gradient-to-b py-2 px-10 from-[#A1BDFF] to-[#0048EE] text-white text-sm font-sans font-semibold" >Get In Touch</button>
       </div>
     </div>
 </section>

@@ -46,7 +46,9 @@ Route::get('/slot-booking', function () {
 Route::get('/Select_Duration', function () {
     return view('user.frontpage.available-plots.Select_Duration');
 })->name('Select_Duration');
-
+Route::get('/payment', function () {
+    return view('user.frontpage.available-plots.payment');
+})->name('payment');
 use App\Http\Controllers\AdvertisementController;
 use App\Http\Controllers\BookingController;
 
@@ -67,3 +69,15 @@ Route::get('/about', function () {
 Route::get('/Services', function () {
     return view('user.frontpage.about.Services');
 });
+Route::get('/contact', function () {
+    return view('user.frontpage.about.contact');
+});
+Route::get('/Visual_Markers', function () {
+    return view('user.frontpage.available-plots.Visual_Markers');
+})->name('Visual_Markers');
+Route::get('/my_booking', function () {
+    return view('user.frontpage.available-plots.my_booking');
+})->name('my_booking');
+Route::get('/History', function () {
+    return view('user.frontpage.available-plots.History');
+})->name('History');
