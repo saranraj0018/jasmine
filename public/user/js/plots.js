@@ -76,4 +76,8 @@ $(document).ready(function () {
     });
 
 });
-
+//history //
+$(".campaign-card").click(function () {
+    $(".campaign-card").removeClass("card-active");
+    $(this).addClass("card-active");
+});

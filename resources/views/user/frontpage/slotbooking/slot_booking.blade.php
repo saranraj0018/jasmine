@@ -1,9 +1,7 @@
- @extends('user.frontpage.main')
- @include('user.frontpage.header')
-
- @section('jasmin-content')
+@include('user.frontpage.header')
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  <script src="/user/js/plots.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
  <section class="max-w-6xl mx-auto px-6 py-10 relative mt-20">
      <!-- Section Header -->
@@ -127,4 +125,4 @@
              </form>
          </div>
      </div>
-     @endsection
+  

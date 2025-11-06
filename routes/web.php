@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home'); // ✅ 
+    return view('user.frontpage.home.home'); // ✅ 
 });
 
 Route::post('/menu', function () {
@@ -41,14 +41,15 @@ Route::get('/poleads', function () {
     return view('user.frontpage.available-plots.poleads');
 })->name('poleads');
 Route::get('/slot-booking', function () {
-    return view('user.frontpage.available-plots.slot_booking');
+    return view('user.frontpage.slotbooking.slot_booking');
 })->name('slot.booking');
 Route::get('/Select_Duration', function () {
-    return view('user.frontpage.available-plots.Select_Duration');
+    return view('user.frontpage.duration.Select_duration');
 })->name('Select_Duration');
 Route::get('/payment', function () {
-    return view('user.frontpage.available-plots.payment');
+    return view('user.frontpage.payment.payment');
 })->name('payment');
+
 use App\Http\Controllers\AdvertisementController;
 use App\Http\Controllers\BookingController;
 
@@ -73,11 +74,18 @@ Route::get('/contact', function () {
     return view('user.frontpage.about.contact');
 });
 Route::get('/Visual_Markers', function () {
-    return view('user.frontpage.available-plots.Visual_Markers');
+    return view('user.frontpage.VisualMarkers.Visual_Markers');
 })->name('Visual_Markers');
+
 Route::get('/my_booking', function () {
-    return view('user.frontpage.available-plots.my_booking');
+    return view('user.frontpage.booking.my_booking');
 })->name('my_booking');
 Route::get('/History', function () {
-    return view('user.frontpage.available-plots.History');
+    return view('user.frontpage.history.History');
 })->name('History');
+Route::get('/Profile', function () {
+    return view('user.frontpage.profile.Profile');
+})->name('Profile');
+Route::get('/Dashboard', function () {
+    return view('user.frontpage.dashboard.Dashboard');
+})->name('Dashboard');

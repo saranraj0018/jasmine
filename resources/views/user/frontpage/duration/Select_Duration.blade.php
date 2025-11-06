@@ -1,9 +1,7 @@
- @extends('user.frontpage.main')
- @include('user.frontpage.header')
-
- @section('jasmin-content')
+ <script src="https://cdn.tailwindcss.com"></script>
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  <script src="/user/js/plots.js"></script>
+ @include('user.frontpage.header')
  <!-- Title -->
  <div class="pt-10 mt-20  max-w-5xl mx-auto">
      <h1 class="text-xl  font-medium text-[#234693] mb-1">Booking Duration</h1>
@@ -17,33 +15,33 @@
      <div class="flex justify-between items-center mb-10 max-w-2xl mx-auto">
          <!-- Step 1 -->
          <div class="flex flex-col items-center">
-            <div class="flex gap-4">
-             <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white text-xl">✔</div>
-             <p class="hover:text-[#21C45D] text-[#3C83F6] text-sm mt-3 font-medium">Select Seats</p>
-         </div>
+             <div class="flex gap-4">
+                 <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white text-xl">✔</div>
+                 <p class="hover:text-[#21C45D] text-[#3C83F6] text-sm mt-3 font-medium">Select Seats</p>
+             </div>
          </div>
 
          <div class="border-dashed border-t border-green-400 w-20"></div>
 
          <!-- Step 2 Active -->
          <div class="flex flex-col items-center">
-            <div class="flex gap-4">
-             <div class="w-10 h-10 rounded-full bg-[#0033A8] flex items-center justify-center text-white text-xl">
-                 📅
+             <div class="flex gap-4">
+                 <div class="w-10 h-10 rounded-full bg-[#0033A8] flex items-center justify-center text-white text-xl">
+                     📅
+                 </div>
+                 <p class="hover:text-[#21C45D] text-[#3C83F6] text-sm mt-3 font-medium">Choose Duration</p>
              </div>
-             <p class="hover:text-[#21C45D] text-[#3C83F6] text-sm mt-3 font-medium">Choose Duration</p>
-         </div>
          </div>
          <div class="border-dashed border-t border-gray-300 w-20"></div>
 
          <!-- Step 3 -->
          <div class="flex flex-col items-center opacity-60">
-            <div class="flex gap-4">
-             <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-xl">
-                 🧾
+             <div class="flex gap-4">
+                 <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-xl">
+                     🧾
+                 </div>
+                 <p class="hover:text-[#21C45D] text-[#3C83F6] text-sm mt-3 font-medium">Review & Pay</p>
              </div>
-             <p class="hover:text-[#21C45D] text-[#3C83F6] text-sm mt-3 font-medium">Review & Pay</p>
-         </div>
          </div>
      </div>
 
@@ -89,17 +87,17 @@
      </div>
 
      <!-- Button -->
-     <<div class="text-center mt-8">
-                     <div class="flex justify-center">
-                         <div class="text-center mx-auto">
-                             <a href="{{ route('payment') }}"
-                                 class="w-40 py-2.5 px-3.5 rounded-full bg-gradient-to-b from-[#0033A8] to-[#001442] text-white font-medium shadow hover:from-blue-800 hover:to-blue-950 transition flex items-center justify-center">
-                                 Next
-                             </a>
+     <div class="text-center mt-8">
+         <div class="flex justify-center">
+             <div class="text-center mx-auto">
+                 <a href="{{ route('payment') }}"
+                     class="w-40 py-2.5 px-3.5 rounded-full bg-gradient-to-b from-[#0033A8] to-[#001442] text-white font-medium shadow hover:from-blue-800 hover:to-blue-950 transition flex items-center justify-center">
+                     Next
+                 </a>
 
 
-                         </div>
-                     </div>
-                 </div>
+             </div>
+         </div>
+     </div>
 
  </div>

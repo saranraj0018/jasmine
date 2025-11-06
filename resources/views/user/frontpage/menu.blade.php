@@ -18,15 +18,15 @@
 
     <!-- Desktop Buttons -->
     <div class="hidden md:flex items-center space-x-3">
-     <button id="loginBtn"
-  class="bg-white text-gray-800 px-5 py-2 rounded-full shadow hover:bg-gray-100 transition">
-  Login
-</button>
+      <button id="loginBtn"
+        class="bg-white text-gray-800 px-5 py-2 rounded-full shadow hover:bg-gray-100 transition">
+        Login
+      </button>
 
-      <a href="{{ route('register') }}" 
-   class="bg-gradient-to-r from-[#0033A8] to-[#001442] text-xs text-white px-5 py-2 rounded-full shadow hover:opacity-90 transition">
-   Sign Up
-</a>
+      <a href="{{ route('register') }}"
+        class="bg-gradient-to-r from-[#0033A8] to-[#001442] text-xs text-white px-5 py-2 rounded-full shadow hover:opacity-90 transition">
+        Sign Up
+      </a>
 
     </div>
 
@@ -54,7 +54,7 @@
         <button id="signupBtn"
           class="bg-linear-to-r from-[#0033A8] to-[#001442] text-white px-5 py-2 rounded-full shadow hover:opacity-90 transition">
           Sign Up
-</button>
+        </button>
       </div>
     </nav>
   </div>
@@ -63,7 +63,7 @@
 <!-- Login Modal -->
 <div id="loginModal"
   class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-50">
-  
+
   <div class="bg-gradient-to-t from-[#ffffff] to-[#E5F6FF] p-6 rounded-3xl w-[90%] md:w-1/2 relative shadow-xl">
 
     <!-- Close Button -->
@@ -81,14 +81,14 @@
       @csrf
 
       <div class="mb-3 mt-5">
-        <label class=" fa fa-envelope block text-sm font-medium text-[#1C356E] mb-1">   Email</label>
+        <label class=" fa fa-envelope block text-sm font-medium text-[#1C356E] mb-1"> Email</label>
         <input type="email" placeholder="Enter Your Email"
           class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required>
       </div>
 
       <div class="mb-3">
-        <label class=" fa fa-lock block text-sm font-medium text-[#1C356E] mb-1">    Password</label>
+        <label class=" fa fa-lock block text-sm font-medium text-[#1C356E] mb-1"> Password</label>
         <input type="password" placeholder="Enter Your Password"
           class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required>
@@ -106,7 +106,7 @@
       </div>
 
       <p class="text-center text-xs text-black font-normal my-3">
-        Don’t have an account? 
+        Don’t have an account?
         <a href="{{ route('register') }}" class="text-xs text-black font-medium">Sign up here</a>
       </p>
     </form>

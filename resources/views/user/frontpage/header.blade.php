@@ -1,8 +1,8 @@
  <section>
-    <header>
-        <section>
-            @include('user.frontpage.menu')
+     <header>
+         <section>
+             @include('user.frontpage.menu')
 
-        </section>
-    </header>
-</section>
+         </section>
+     </header>
+ </section>

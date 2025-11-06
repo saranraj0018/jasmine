@@ -121,6 +121,10 @@ function openBookingModal4() {
 function closeBookingModal4() {
     document.getElementById("bookingModal").classList.add("hidden");
 }
+ function showReviewSection() {
+    document.getElementById("chooseDuration").classList.add("hidden");
+    document.getElementById("reviewSection").classList.remove("hidden");
+  }
 //payment//
 function open() {
     document.getElementById("bookingModal").classList.remove("hidden");
@@ -128,8 +132,20 @@ function open() {
 function close() {
     document.getElementById("bookingModal").classList.add("hidden");
 }
+
 //my_booking//
 $(".card").click(function () {
     $(".card").removeClass("card-active");
     $(this).addClass("card-active");
+});
+//profile//
+$(document).ready(function(){
+  $(".menu-item").click(function(){
+    $(".menu-item").removeClass("bg-blue-100 text-blue-700 font-medium");
+    $(this).addClass("bg-blue-100 text-blue-700 font-medium");
+
+    var target = $(this).data("target");
+    $(".content-section").hide(); 
+    $(target).fadeIn(300);
+  });
 });
