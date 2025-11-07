@@ -149,3 +149,69 @@ $(document).ready(function(){
     $(target).fadeIn(300);
   });
 });
+//visualmarkers//
+ $(document).ready(function() {
+      // Open first popup
+      $("#openFirstPopup").click(function() {
+        $("#popup1").fadeIn(200);
+        $("#popup1 .popup-content").addClass("popup-show");
+      });
+
+      // Close first popup
+      $("#closePopup1").click(function() {
+        $("#popup1 .popup-content").removeClass("popup-show");
+        setTimeout(() => $("#popup1").fadeOut(200), 150);
+      });
+
+      // Move from popup1 -> popup2
+      $("#reviewPay").click(function() {
+        const selected = $("input[name='duration']:checked").val();
+        $("#durationText").text(selected);
+        $("#popup1 .popup-content").removeClass("popup-show");
+        setTimeout(() => {
+          $("#popup1").fadeOut(200);
+          $("#popup2").fadeIn(200);
+          $("#popup2 .popup-content").addClass("popup-show");
+        }, 200);
+      });
+
+      // Close popup2
+      $("#closePopup2").click(function() {
+        $("#popup2 .popup-content").removeClass("popup-show");
+        setTimeout(() => $("#popup2").fadeOut(200), 150);
+      });
+
+      // Close if click outside
+      $(window).click(function(e) {
+        if ($(e.target).is("#popup1")) $("#closePopup1").click();
+        if ($(e.target).is("#popup2")) $("#closePopup2").click();
+      });
+    });
+
+    const dataitems = [
+  { title: "Valankulam", seats: 10, image: "./img/visual.png", place: "Periyakulam Lake" },
+  { title: "Race Course", seats: 8, image: "./img/visual.png", place: "Avinashi Road" },
+];
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".openBookingPopup").forEach(button => {
+        button.addEventListener("click", () => {
+            const title = button.dataset.title;
+            const place = button.dataset.place;
+            const image = button.dataset.image;
+            const url = button.dataset.url;
+
+            document.getElementById("popup2Title").textContent = title;
+            document.getElementById("popup2Place").textContent = place;
+            document.getElementById("popup2Image").src = image;
+            document.getElementById("popup2Url").href = url;
+
+            document.getElementById("popup2").classList.remove("hidden");
+        });
+    });
+
+    document.getElementById("closePopup2").addEventListener("click", () => {
+        document.getElementById("popup2").classList.add("hidden");
+    });
+});
+

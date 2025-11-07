@@ -23,7 +23,7 @@
         Login
       </button>
 
-      <a href="{{ route('register') }}"
+      <a href=""
         class="bg-gradient-to-r from-[#0033A8] to-[#001442] text-xs text-white px-5 py-2 rounded-full shadow hover:opacity-90 transition">
         Sign Up
       </a>
@@ -61,13 +61,13 @@
 </header>
 
 <!-- Login Modal -->
-<div id="loginModal"
-  class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+<div id="loginPopup"
+  class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-50 animate-fadeIn  ">
 
   <div class="bg-gradient-to-t from-[#ffffff] to-[#E5F6FF] p-6 rounded-3xl w-[90%] md:w-1/2 relative shadow-xl">
 
     <!-- Close Button -->
-    <button id="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+    <button id="closeLogin" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
 
     <h2 class="text-2xl font-bold text-center bg-gradient-to-t from-[#0033A8] to-[#001442] bg-clip-text text-transparent mb-4">
       WELCOME BACK
@@ -107,9 +107,99 @@
 
       <p class="text-center text-xs text-black font-normal my-3">
         Don’t have an account?
-        <a href="{{ route('register') }}" class="text-xs text-black font-medium">Sign up here</a>
+        <a href="" class="text-xs text-black font-medium">Sign up here</a>
       </p>
     </form>
 
+  </div>
+</div>
+
+<!-- Signup Popup -->
+<div id="signupPopup"
+  class=" hidden h-[80vh] fixed w-full z-50 flex items-center justify-center mt-20">
+  <div class="bg-gradient-to-t from-[#ffffff] to-[#E5F6FF] py-5 px-10 rounded-3xl mx-auto w-1/2 opacity-100 relative">
+    <h2 class="lg:text-xl md:text-xl text-sm font-semibold font-[Inter] text-center bg-gradient-to-t from-[#0033A8] to-[#001442] bg-clip-text text-transparent mb-4">
+      Create Account
+    </h2>
+    <p class="text-sm font-normal font-[Inter] text-black text-center">
+      Join BannerBook and start advertising
+    </p>
+
+    <form class="mt-5">
+      <!-- Split form into two columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Left Column -->
+        <div>
+          <div class="mb-3">
+            <i class="fa fa-user text-sm font-medium text-[#1C356E] mb-1"> Full Name</i>
+            <input type="text" placeholder="Enter Your Full Name"
+              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              required>
+          </div>
+
+          <div class="mb-3">
+            <i class="fa fa-building text-sm font-medium text-[#1C356E] mb-1"> Company Name</i>
+            <input type="text" placeholder="Enter Your Company Name"
+              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              required>
+          </div>
+
+          <div class="mb-3">
+            <i class="fa fa-file-lines text-sm font-medium text-[#1C356E] mb-1"> GST Number</i>
+            <input type="text" placeholder="Enter Your GST Number"
+              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              required>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div>
+          <div class="mb-3">
+            <i class="fa fa-envelope text-sm font-medium text-[#1C356E] mb-1"> Email</i>
+            <input type="email" placeholder="Enter Your Email"
+              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              required>
+          </div>
+
+          <div class="mb-3">
+            <i class="fa fa-phone text-sm font-medium text-[#1C356E] mb-1"> Phone Number</i>
+            <input type="tel" placeholder="Enter Your Phone Number"
+              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              required>
+          </div>
+
+          <div class="mb-3">
+            <i class="fa fa-lock text-sm font-medium text-[#1C356E] mb-1"> Password</i>
+            <input type="password" placeholder="Enter Your Password"
+              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              required>
+          </div>
+
+          <div class="mb-3">
+            <i class="fa fa-lock text-sm font-medium text-[#1C356E] mb-1"> Confirm Password</i>
+            <input type="password" placeholder="Confirm Password"
+              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              required>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="flex justify-center mt-5">
+        <button type="button"
+          class="w-[20rem] bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-xl md:text-xl text-sm font-medium rounded-3xl py-2 hover:opacity-90 transition">
+          Create Account
+        </button>
+      </div>
+
+      <p class="text-center lg:text-sm md:text-sm text-xs text-black font-normal my-3">
+        Already have an account? <a href="#" class="text-[#006AFF]">Login here</a>
+      </p>
+    </form>
+
+    <!-- Close Button -->
+    <button id="closeSignup"
+      class="absolute top-3 right-5 text-2xl text-gray-600 hover:text-gray-800">&times;</button>
   </div>
 </div>

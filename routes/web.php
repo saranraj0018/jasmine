@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('user.frontpage.home.home'); // ✅ 
-});
 
 Route::post('/menu', function () {
     return 'Menu route works!';
@@ -34,9 +31,7 @@ Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
 
-Route::get('/register', function () {
-    return view('auth.register');
-})->name('register');
+
 Route::get('/poleads', function () {
     return view('user.frontpage.available-plots.poleads');
 })->name('poleads');
@@ -89,3 +84,17 @@ Route::get('/Profile', function () {
 Route::get('/Dashboard', function () {
     return view('user.frontpage.dashboard.Dashboard');
 })->name('Dashboard');
+Route::get('/example', function () {
+    return view('user.frontpage.example');
+})->name('example');
+
+use App\Http\Controllers\VisualMarkerController;
+
+Route::get('/Visual_Markers', [VisualMarkerController::class, 'index']);
+
+
+
+
+Route::get('/', function () {
+    return view('user.frontpage.home.home'); // ✅ 
+});
