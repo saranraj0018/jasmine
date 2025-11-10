@@ -3,7 +3,16 @@
 
 @section('jasmin-content')
 
-<section class="max-w-6xl mx-auto px-6 py-10 relative mt-20" x-data="{ open: false, selected: {} }">
+<section 
+    class="max-w-6xl mx-auto px-6 py-10 relative lg:mt-20 md:mt-20 mt-10" 
+    x-data="{ 
+        open: false, 
+        openSummary: false, 
+        selected: {}, 
+        duration: '3 Months', 
+        price: '145,000' 
+    }"
+>
     <!-- Section Header -->
     <div class="mb-6">
         <h2 class="md:text-2xl text-xl font-bold text-[#234693]">Select Your Location</h2>
@@ -86,15 +95,15 @@
     </div>
 
     <!-- Card Section -->
-    <section class="my-7">
+    <section class=" my-7 ">
         <div class="grid grid-cols-12 gap-5">
             @foreach ($locations as $location)
                 <div class="col-span-12 md:col-span-4 lg:col-span-4 bg-white shadow-xl rounded-3xl">
                     <img src="{{ asset($location['image']) }}" class="w-full rounded-t-3xl" alt="{{ $location['title'] }}" />
 
-                    <div class="flex pt-4 px-5 justify-between">
+                    <div class="flex pt-4 px-5 justify-between gap-4">
                         <h2 class="text-lg font-medium font-sans text-[#234693]">{{ $location['title'] }}</h2>
-                        <p class="text-sm font-medium font-sans text-[#234693] bg-[#EEF7FF] py-2 px-3 rounded-3xl">
+                        <p class="md:text-xs lg:text-sm text-xs font-medium font-sans text-[#234693] bg-[#EEF7FF] py-2 px-3 rounded-3xl">
                             {{ $location['seats'] }} Seats Available
                         </p>
                     </div>
@@ -104,7 +113,7 @@
                         <p class="text-[#747474] text-sm font-medium font-sans">{{ $location['place'] }}</p>
                     </div>
 
-                    <div class="text-center mt-5 mb-2">
+                    <div class="text-center mt-5 lg:mb-2 md:mb-7 mb-8">
                         <button
                             @click="selected = {{ json_encode($location) }}; open = true"
                             class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter'] lg:px-20 px-10 lg:my-3 lg:py-3 py-3 rounded-full shadow-md hover:opacity-90 transition">
@@ -116,15 +125,10 @@
         </div>
     </section>
 
-    <section 
-   
->
-
-
     <!-- Popup 1: Choose Duration -->
     <div 
         x-show="open" 
-        x-transition
+        x-transition.opacity.scale
         class="fixed inset-0 z-50 flex justify-center items-center bg-black/50 backdrop-blur-sm px-3"
     >
         <div class="bg-white w-full max-w-lg rounded-3xl shadow-xl p-5 md:p-6 relative">
@@ -148,9 +152,9 @@
                 <label class="flex justify-between items-center bg-gray-100 px-6 py-4 rounded-full cursor-pointer">
                     <div class="flex items-center gap-3">
                         <input type="radio" name="duration" value="1 Month" @change="duration = '1 Month'; price = '45,000'">
-                        <p class="text-black font-medium">1 Month</p>
+                        <p class="text-black font-medium  text-xs md:text-sm">1 Month</p>
                     </div>
-                    <p class="font-black text-gray-800">$ 45,000</p>
+                    <p class="font-black text-gray-800 text-xs md:text-sm ">$ 45,000</p>
                 </label>
 
                 <!-- 3 Months -->
@@ -158,11 +162,11 @@
                     <div class="flex items-center gap-3">
                         <input type="radio" name="duration" value="3 Months" checked @change="duration = '3 Months'; price = '145,000'">
                         <div class="flex items-center gap-2">
-                            <p class="text-black font-medium">3 Months</p>
+                            <p class="text-black font-medium text-xs md:text-sm">3 Months</p>
                             <span class="bg-green-500 text-white text-xs font-semibold px-2 py-1 rounded-full">5% Off</span>
                         </div>
                     </div>
-                    <p class="font-bold text-black">$ 145,000</p>
+                    <p class="font-bold text-black text-xs md:text-sm">$ 145,000</p>
                 </label>
 
                 <!-- 6 Months -->
@@ -170,11 +174,11 @@
                     <div class="flex items-center gap-3">
                         <input type="radio" name="duration" value="6 Months" @change="duration = '6 Months'; price = '245,000'">
                         <div class="flex items-center gap-2">
-                            <p class="text-black font-medium">6 Months</p>
+                            <p class="text-black font-medium text-xs md:text-sm">6 Months</p>
                             <span class="bg-green-500 text-white text-xs font-semibold px-2 py-1 rounded-full">10% Off</span>
                         </div>
                     </div>
-                    <p class="font-semibold text-black">$ 245,000</p>
+                    <p class="font-semibold text-black text-xs md:text-sm">$ 245,000</p>
                 </label>
             </div>
 
@@ -188,11 +192,10 @@
         </div>
     </div>
 
-
     <!-- Popup 2: Booking Summary -->
     <div 
         x-show="openSummary" 
-        x-transition
+        x-transition.opacity.scale
         class="fixed inset-0 z-50 flex justify-center items-center bg-black/50 backdrop-blur-sm px-3"
     >
         <div class="bg-white w-full max-w-lg rounded-3xl shadow-xl p-5 md:p-6 relative">
@@ -208,47 +211,70 @@
                     alt="Selected Location">
             </div>
 
-            <h2 class="text-lg font-semibold text-[#002168] mt-5 text-left mb-6">Booking Summary</h2>
+            <h2 class="text-lg font-semibold text-[#002168] mt-5 text-left mb-3">Booking Summary</h2>
 
-            <div class="border rounded-xl p-6 max-w-md mx-auto shadow-sm border-[#2B6FFF] space-y-4 text-sm">
-                
+             <!-- Summary Card -->
+        <div class="border rounded-xl p-6 max-w-md mx-auto shadow-sm border-[#2B6FFF]">
+
+            <div class="space-y-4 text-sm">
+
                 <div class="flex justify-between">
-                    <p class="font-medium text-black">Location :</p>
-                    <p class="font-semibold text-right text-[#234693]">
-                        <span x-text="selected.title"></span><br>
-                        <span class="text-xs text-[#6C6C6C]" x-text="selected.place"></span>
+                    <p class="font-medium">Location :</p>
+                    <p class="font-semibold text-right">
+                       Valankulam<br>
+                        <span class="text-xs text-gray-500 pt-2">Periyakulam Lake</span>
                     </p>
                 </div>
 
+               
+
                 <div class="flex justify-between">
-                    <p class="font-medium text-black">Duration :</p>
-                    <p class="font-semibold text-black" x-text="duration"></p>
+                    <p class="font-medium">Duration:</p>
+                    <p class="font-semibold">3 Months</p>
+                </div>
+
+                <hr>
+
+                <div class="flex justify-between">
+                    <p class="font-medium">Base Rate :</p>
+                    <p class="font-semibold">$12,000/month</p>
                 </div>
 
                 <div class="flex justify-between">
-                    <p class="font-medium text-black">Base Rate :</p>
-                    <p class="font-semibold text-black" x-text="'$ ' + price"></p>
+                    <p class="font-medium">Slots × Duration :</p>
+                    <p class="font-semibold">1 × 1</p>
                 </div>
+
+                <div class="flex justify-between">
+                    <p class="font-medium">Subtotal :</p>
+                    <p class="font-semibold">$12,000</p>
+                </div>
+
+                <div class="flex justify-between">
+                    <p class="font-medium">GST (18%) :</p>
+                    <p class="font-semibold">$2,160</p>
+                </div>
+
+               
 
                 <div class="flex justify-between text-base font-semibold">
-                    <p class="text-[#3C83F6] font-medium">Total Amount :</p>
-                    <p class="text-[#3C83F6] text-lg font-medium" x-text="'$ ' + price"></p>
+                    <p class="text-[#3C83F6]">Total Amount :</p>
+                    <p class="text-[#3C83F6] text-lg font-bold">$128,250</p>
                 </div>
 
-                <div class="mt-6 flex justify-center">
-                    <a :href="selected.url"
-                        class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white px-8 py-2 rounded-full font-semibold hover:opacity-90">
-                        Proceed to Payment
-                    </a>
-                </div>
             </div>
         </div>
+
+        <!-- Button -->
+        <div class="flex justify-center mt-10">
+            <a href="{{ route('payment') }}"
+                class=" px-10 md:px-16 py-3 bg-gradient-to-b from-[#0033A8] to-[#001442] text-white font-medium rounded-full shadow hover:from-blue-800 hover:to-blue-950 transition">
+                Proceed to Payment
+            </a>
+
+        </div>
+        </div>
     </div>
-
-</section>
-
-
-
 
 </section>
 

@@ -3,16 +3,16 @@
  <script src="/user/js/plots.js"></script>
  @include('user.frontpage.header')
  <!-- Title -->
- <div class="pt-10 mt-20  max-w-5xl mx-auto">
+ <div class="pt-10 mt-20 px-5 max-w-5xl mx-auto">
      <h1 class="text-xl  font-medium text-[#234693] mb-1">Booking Duration</h1>
      <p class="text-sm text-black mb-10">Choose your booking period</p>
  </div>
- <div class="bg-white shadow-xl rounded-3xl p-10 mb-40 max-w-5xl mx-auto mt-10">
+ <div class="bg-white shadow-xl rounded-3xl p-10  mb-40 max-w-5xl mx-auto mt-10">
 
 
 
      <!-- Steps -->
-     <div class="flex justify-between items-center mb-10 max-w-2xl mx-auto">
+     <div class="flex justify-between items-center mb-10 max-w-2xl   mx-auto">
          <!-- Step 1 -->
          <div class="flex flex-col items-center">
              <div class="flex gap-4">

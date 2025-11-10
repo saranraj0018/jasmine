@@ -2,7 +2,7 @@
   @extends('user.frontpage.main')
   @include('user.frontpage.header')
 
-  <section class="max-w-6xl mx-auto px-6 py-10 relative mt-20">
+  <section class="max-w-6xl mx-auto  px-3 md:px-6 py-10 relative mt-10 md:mt-20">
       <!-- Section Header -->
       <div class="mb-6">
           <h2 class="md:text-2xl text-xl font-bold text-[#234693]">My Bookings</h2>
@@ -104,9 +104,9 @@
       <!-- CARD -->
 
       <section class="mx-auto max-w-7xl my-10">
-          <div class="grid grid-cols-12 gap-7">
-              <div class="col-span-12 md:col-span-6 lg:col-span-6 bg-white rounded-2xl py-7 px-8 shadow-xl">
-                  <div class="flex justify-between items-center">
+          <div class="grid grid-cols-12 gap-7 ">
+              <div class="col-span-12 md:col-span-6 lg:col-span-6 bg-white rounded-2xl py-7 px-8 shadow-xl ">
+                  <div class="flex justify-between items-center ">
                       <h2 class="font-semibold text-[#234693] text-lg">Ukkadam Lake</h2>
                       <span class="text-[#3C83F6] text-lg font-medium">Investment</span>
                   </div>
@@ -114,7 +114,7 @@
                       <p class="text-sm text-[#747474] mt-1">📍 Ukkadam, Coimbatore</p>
                   </div>
                   <div class="flex justify-end mt-[-2rem]">
-                      <p class="mt-4 text-right text-lg  py-2 px-2 bg-[#EEF7FF]  text-black rounded-2xl font-bold">$1,35,000</p>
+                      <p class=" mt-3   md:mt-4 text-right text-sm md:text-lg  py-2 px-2 bg-[#EEF7FF]  text-black rounded-2xl font-bold">$1,35,000</p>
                   </div>
 
 
@@ -133,7 +133,7 @@
 
               </div>
 
-              <div class="col-span-6">
+            
                   <div class="col-span-12 md:col-span-6 lg:col-span-6 bg-white rounded-2xl py-7 px-8 shadow-xl">
                       <div class="flex justify-between items-center">
                           <h2 class="font-semibold text-[#234693] text-lg">RS Puram Junction</h2>
@@ -143,7 +143,7 @@
                           <p class="text-sm text-[#747474] mt-1">📍 Ukkadam, Coimbatore</p>
                       </div>
                       <div class="flex justify-end mt-[-2rem]">
-                          <p class="mt-4 text-right text-lg  py-2 px-2 bg-[#EEF7FF]  text-black rounded-2xl font-bold">$1,35,000</p>
+                          <p class=" mt-3   md:mt-4 text-right text-sm md:text-lg  py-2 px-2 bg-[#EEF7FF]  text-black rounded-2xl font-bold">$1,35,000</p>
                       </div>
 
 
@@ -163,7 +163,7 @@
                   </div>
 
               </div>
-          </div>
+       
       </section>
 
       <!-- add card-->
@@ -178,7 +178,7 @@
                       <p class="text-sm text-[#747474] mt-1">📍 Ukkadam, Coimbatore</p>
                   </div>
                   <div class="flex justify-end mt-[-2rem]">
-                      <p class="mt-4 text-right text-lg  py-2 px-2 bg-[#EEF7FF]  text-black rounded-2xl font-bold">$1,35,000</p>
+                      <p class="mt-4 text-right text-sm md:text-lg  py-2 px-2 bg-[#EEF7FF]  text-black rounded-2xl font-bold">$1,35,000</p>
                   </div>
 
 
@@ -197,7 +197,7 @@
 
               </div>
 
-              <div class="col-span-6">
+             
                   <div class="col-span-12 md:col-span-6 lg:col-span-6 bg-white rounded-2xl py-7 px-8 shadow-xl">
                       <div class="flex justify-between items-center">
                           <h2 class="font-semibold text-[#234693] text-lg">RS Puram Junction</h2>
@@ -207,7 +207,7 @@
                           <p class="text-sm text-[#747474] mt-1">📍 Ukkadam, Coimbatore</p>
                       </div>
                       <div class="flex justify-end mt-[-2rem]">
-                          <p class="mt-4 text-right text-lg  py-2 px-2 bg-[#EEF7FF]  text-black rounded-2xl font-bold">$1,35,000</p>
+                          <p class=" mt-3   md:mt-4 text-right text-sm md:text-lg  py-2 px-2 bg-[#EEF7FF]  text-black rounded-2xl font-bold">$1,35,000</p>
                       </div>
 
 
@@ -227,7 +227,7 @@
                   </div>
 
               </div>
-          </div>
+         
       </section>
 
       <!-- add card-->
@@ -242,7 +242,7 @@
                       <p class="text-sm text-[#747474] mt-1">📍 Ukkadam, Coimbatore</p>
                   </div>
                   <div class="flex justify-end mt-[-2rem]">
-                      <p class="mt-4 text-right text-lg  py-2 px-2 bg-[#EEF7FF]  text-black rounded-2xl font-bold">$1,35,000</p>
+                      <p class=" mt-3   md:mt-4 text-right text-sm md:text-lg  py-2 px-2 bg-[#EEF7FF]  text-black rounded-2xl font-bold">$1,35,000</p>
                   </div>
 
 

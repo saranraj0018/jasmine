@@ -1,15 +1,15 @@
 @section('jasmin-content')
 @extends('user.frontpage.main')
 @include('user.frontpage.header')
-<section class=" py-10 mx-auto max-w-7xl">
-  <section class="max-w-7xl mx-auto px-4 py-6">
+<section class=" md:py-5 lg:py-10 py-5 mx-auto max-w-7xl">
+  <section class="max-w-7xl mx-auto px-4 md:py-6 lg:py-6 py-4">
     <!-- 🟦 Section Header -->
     <h2 class="text-xl font-semibold text-[#234693] mb-1 mt-10">Available Plots</h2>
     <p class="text-sm font-light text-black mb-4">
       Browse and book advertising banner plots across the city
     </p>
 
-    <section class="mx-auto max-w-7xl pt-10">
+    <section class="mx-auto max-w-7xl md:pt-5 lg:pt-10 pt-5">
       <!-- Search Bar with Filter -->
       <div class="flex items-center gap-3 bg-gray-100 p-2 rounded-full shadow-sm max-w-6xl relative">
         <form action="" method="GET" class="flex-1 flex items-center">
@@ -102,7 +102,7 @@
 
 </section>
 <!--section2-->
-<section class="py-5 max-w-7xl lg:px-12 md:px-5 px-5">
+<section class="md:py-5 lg:py-5 py-3 max-w-7xl lg:px-12 md:px-5 px-5">
   <div class="grid grid-cols-12 lg:gap-7 md:gap-4 gap-5">
     <div class=" col-span-12 lg:col-span-4 md:col-span-4  bg-[#EEF7FF] py-3 px-3 md:py-5 rounded-2xl ">
       <div class="flex justify-between gap-0">
@@ -154,7 +154,7 @@
           <h3 class="text-center text-lg font-semibold text-black mb-2">
             Select Advertisement Type
           </h3>
-          <p class="text-center text-black mb-8">
+          <p class="text-center text-sm text-black mb-8">
             Choose the type of advertising that best suits your needs
           </p>
 
@@ -163,7 +163,7 @@
             <div class="cursor-pointer border border-gray-100  shadow-xl rounded-2xl p-6 text-center transition bg-white ">
               <div class="flex flex-col  ">
                 <div class="flex  mb-3 gap-4 bg-gradient-to-t from-[#ffffff] to-[#E5F6FF] relative rounded-2xl py-5 px-5">
-                  <img src="./img/image 105.png" class="w [-10rem]" alt="img" />
+                  <img src="./img/image 105.png" class="w [-10rem] " alt="img" />
                   <h4 id="poleAdsLink" class="text-[#234693] font-semibold text-lg mb-1"><a href="{{ route('poleads') }}">Pole Ads</a></p>
                   </h4>
 
@@ -193,7 +193,7 @@
 
     </div>
     <div class=" col-span-12 lg:col-span-4 md:col-span-4  bg-[#EEF7FF] py-3 px-3 md:py-5 px-5 rounded-2xl ">
-      <div class="flex justify-between gap-0">
+      <div class="flex justify-between lg:gap-0 md:gap-2">
         <h3 class="lg:text-xl  text-sm font-[Inter] font-medium text-[#234693]">RS Puram Junction</h3>
         <div class="flex items-center space-x-2 bg-[#FFE6A8] text-[#DBA002] px-3 py-1 rounded-full w-fit">
           <span class="w-3 h-3 bg-[#DBA002] rounded-full"></span>
@@ -326,7 +326,7 @@
 <section class="py-15 mt-7 max-w-7xl lg:px-12 md:px-5 px-5">
   <div class="grid grid-cols-12 lg:gap-7 md:gap-4 gap-5">
     <div class=" col-span-12 lg:col-span-4 md:col-span-4  bg-[#EEF7FF] py-3 px-3 md:py-5 px-5 rounded-2xl ">
-      <div class="flex justify-between gap-0">
+      <div class="flex justify-between lg:gap-0 md:gap-2">
         <h3 class="lg:text-xl  text-sm font-[Inter] font-medium text-[#234693]">RS Puram Junction</h3>
         <div class="flex items-center space-x-2 bg-[#FFE6A8] text-[#DBA002] px-3 py-1 rounded-full w-fit">
           <span class="w-3 h-3 bg-[#DBA002] rounded-full"></span>
@@ -366,7 +366,7 @@
 
     </div>
     <div class=" col-span-12 lg:col-span-4 md:col-span-4  bg-[#EEF7FF] py-3 px-3 md:py-5 px-5 rounded-2xl ">
-      <div class="flex justify-between gap-0">
+      <div class="flex justify-between lg:gap-0 md:gap-2">
         <h3 class="lg:text-xl  text-sm font-[Inter] font-medium text-[#234693]">RS Puram Junction</h3>
         <div class="flex items-center space-x-2 bg-[#FFE6A8] text-[#DBA002] px-3 py-1 rounded-full w-fit">
           <span class="w-3 h-3 bg-[#DBA002] rounded-full"></span>
@@ -449,7 +449,7 @@
 <section class="py-15 mt-7 mb-20 max-w-7xl lg:px-12 md:px-5 px-5">
   <div class="grid grid-cols-12 lg:gap-7 md:gap-4 gap-5">
     <div class=" col-span-12 lg:col-span-4 md:col-span-4  bg-[#EEF7FF] py-3 px-3 md:py-5 px-5 rounded-2xl ">
-      <div class="flex justify-between gap-0">
+      <div class="flex justify-between lg:gap-0 md:gap-2">
         <h3 class="lg:text-xl  text-sm font-[Inter] font-medium text-[#234693]">Gandhipuram Signal</h3>
         <div class="flex items-center space-x-2 bg-[#FFB5B5] text-[#EF4343] px-3 py-1 rounded-full w-fit">
           <span class="w-3 h-3 bg-[#EF4343] rounded-full"></span>

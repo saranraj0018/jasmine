@@ -1,5 +1,5 @@
- <section class="max-w-7xl mx-auto py-10 px-5">
-     <h2 class="text-3xl font-[Inter] font-medium text-[#234693]">Available Plots</h2>
+ <section class="max-w-7xl mx-auto md:py-10 lg:py-10 py-4 px-5">
+     <h2 class="md:text-3xl lg:text-3xl text-xl font-[Inter] font-medium text-[#234693]">Available Plots</h2>
      <p class="text-sm Font-[Inter] font-normal text-black py-3">Browse and book advertising banner plots across the
          city</p>
  </section>

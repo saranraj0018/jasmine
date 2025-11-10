@@ -101,22 +101,22 @@
     </div>
   </div>
 
-  <div class="max-w-7xl mx-auto p-6 space-y-10">
+  <div class="max-w-7xl mx-auto p-6  lg:space-y-10 md:space-y-10 space-y-4">
 
-    <section class="bg-[#F4F4F4] rounded-3xl mx-auto max-w-7xl py-10 px-5">
+    <section class="bg-[#F4F4F4] rounded-3xl mx-auto max-w-7xl    py-10 md:px-5 lg:px-5 px-3">
       <div class="flex gap-4 bg-white rounded-2xl py-3 px-3 w-[10rem] ">
         <img src="./img/image 105.png" class="w-1/2 w-5 h-5" alt="location" />
         <h2 class="text-black font-semibold text-sm my-auto">Kurichi Kulam</h2>
       </div>
-      <div class="grid grid-cols-12 py-5 gap-5">
+      <div class="grid grid-cols-12 md:py-5 lg:py-5 py-3 gap-5">
         <div class="col-span-12  md:col-span-4 lg:col-span-4 bg-gradient-to-t from-white to-[#E5F6FF]  py-3 px-3 md:py-5 md:px-9 rounded-3xl">
           <h3 class="text-black font-medium md:text-lg lg:text-lg text-sm">Pollachi Highway</h3>
           <p class="text-black font-light md:text-sm  text-xs py-2">45 Plots</p>
           <div class="grid grid-cols-6 gap-4  ">
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold lg:text-lg md:text-sm text-sm">12 <span class="text-black font-light lg:text-sm  text-xs">Premium</span></p>
             </div>
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12 md:col-span-3 lg:col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold  lg:text-xl md:text-lg  text-sm">8 <span class="text-black font-light  lg:text-sm text-xs">Exclusive</span></p>
             </div>
           </div>
@@ -132,10 +132,10 @@
           <h3 class="text-black font-medium md:text-lg lg:text-lg text-sm">City Center Route</h3>
           <p class="text-black font-light md:text-sm  text-xs py-2">32 Plots</p>
           <div class="grid grid-cols-6 gap-4  ">
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold lg:text-xl md:text-sm text-sm">15 <span class="text-black font-light lg:text-sm  text-xs">Premium</span></p>
             </div>
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold  lg:text-xl md:text-lg  text-sm">5 <span class="text-black font-light  lg:text-sm text-xs">Exclusive</span></p>
             </div>
           </div>
@@ -255,16 +255,16 @@
 
 
                   <!-- Submit Button -->
-                   <div class="flex justify-center">
-                  <div class="text-center mx-auto">
-                    <a href="{{ route('slot.booking') }}"
-   class="w-40 py-2.5 rounded-full bg-gradient-to-b from-[#0033A8] to-[#001442] text-white font-medium shadow hover:from-blue-800 hover:to-blue-950 transition flex items-center justify-center">
-   Next
-</a>
+                  <div class="flex justify-center">
+                    <div class="text-center mx-auto">
+                      <a href="{{ route('slot.booking') }}"
+                        class="w-40 py-2.5 rounded-full bg-gradient-to-b from-[#0033A8] to-[#001442] text-white font-medium shadow hover:from-blue-800 hover:to-blue-950 transition flex items-center justify-center">
+                        Next
+                      </a>
 
 
+                    </div>
                   </div>
-                   </div>
                 </form>
               </div>
             </div>
@@ -293,10 +293,10 @@
             <p class=" text-black font-light md:text-sm  text-xs py-2"> Series A</p>
           </div>
           <div class="grid grid-cols-6 gap-4  ">
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold lg:text-lg md:text-sm text-sm">12 <span class="text-black font-light lg:text-sm  text-xs">Premium</span></p>
             </div>
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold  lg:text-xl md:text-lg  text-sm">8 <span class="text-black font-light  lg:text-sm text-xs">Exclusive</span></p>
             </div>
           </div>
@@ -315,10 +315,10 @@
             <p class=" text-black font-light md:text-sm  text-xs py-2"> Series A</p>
           </div>
           <div class="grid grid-cols-6 gap-4  ">
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold lg:text-xl md:text-sm text-sm">15 <span class="text-black font-light lg:text-sm  text-xs">Premium</span></p>
             </div>
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold  lg:text-xl md:text-lg  text-sm">5 <span class="text-black font-light  lg:text-sm text-xs">Exclusive</span></p>
             </div>
           </div>
@@ -336,10 +336,10 @@
             <p class=" text-black font-light md:text-sm  text-xs py-2"> Series A</p>
           </div>
           <div class="grid grid-cols-6 gap-4  ">
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold lg:text-xl md:text-sm text-sm">15 <span class="text-black font-light lg:text-sm  text-xs">Premium</span></p>
             </div>
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold  lg:text-xl md:text-lg  text-sm">5 <span class="text-black font-light  lg:text-sm text-xs">Exclusive</span></p>
             </div>
           </div>
@@ -372,10 +372,10 @@
             <p class=" text-black font-light md:text-sm  text-xs py-2"> Series A</p>
           </div>
           <div class="grid grid-cols-6 gap-4  ">
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold lg:text-lg md:text-sm text-sm">12 <span class="text-black font-light lg:text-sm  text-xs">Premium</span></p>
             </div>
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold  lg:text-xl md:text-lg  text-sm">8 <span class="text-black font-light  lg:text-sm text-xs">Exclusive</span></p>
             </div>
           </div>
@@ -394,10 +394,10 @@
             <p class=" text-black font-light md:text-sm  text-xs py-2"> Series A</p>
           </div>
           <div class="grid grid-cols-6 gap-4  ">
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold lg:text-xl md:text-sm text-sm">15 <span class="text-black font-light lg:text-sm  text-xs">Premium</span></p>
             </div>
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold  lg:text-xl md:text-lg  text-sm">5 <span class="text-black font-light  lg:text-sm text-xs">Exclusive</span></p>
             </div>
           </div>
@@ -415,10 +415,10 @@
             <p class=" text-black font-light md:text-sm  text-xs py-2"> Series A</p>
           </div>
           <div class="grid grid-cols-6 gap-4  ">
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4 rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold lg:text-xl md:text-sm text-sm">15 <span class="text-black font-light lg:text-sm  text-xs">Premium</span></p>
             </div>
-            <div class="col-span-3  bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
+            <div class="col-span-12  md:col-span-3 lg:col-span-3   bg-gradient-to-t from-white to-[#E5F6FF] py-3 px-4  rounded-xl shadow-sm border-0 hover:border-2  hover:border-[#00AAFF]">
               <p class="text-[#00AAFF] font-semibold  lg:text-xl md:text-lg  text-sm">5 <span class="text-black font-light  lg:text-sm text-xs">Exclusive</span></p>
             </div>
           </div>

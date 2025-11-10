@@ -42,9 +42,11 @@
   <div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-md shadow-inner">
     <nav class="flex flex-col items-center py-3 space-y-2">
       <a href="{{ url('/') }}" class="text-gray-700 hover:text-indigo-700 transition">Home</a>
-      <a href="#about" class="text-gray-700 hover:text-indigo-700 transition">About Us</a>
-      <a href="#services" class="text-gray-700 hover:text-indigo-700 transition">Services</a>
-      <a href="#contact" class="text-gray-700 hover:text-indigo-700 transition">Contact</a>
+      <a href="{{ route('menu') }}" class="text-gray-700 hover:text-indigo-700 transition">Available Plots</a>
+      <a href="#services" class="text-gray-700 hover:text-indigo-700 transition">About Us</a>
+      <a href="#contact" class="text-gray-700 hover:text-indigo-700 transition">Services</a>
+            <a href="#contact" class="text-gray-700 hover:text-indigo-700 transition">Contact</a>
+
       <a href="{{ route('menu') }}" class="text-gray-700 hover:text-indigo-700 transition">Profile</a>
 
       <div class="flex space-x-3 pt-2">

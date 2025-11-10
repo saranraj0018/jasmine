@@ -4,8 +4,8 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <section class="my-20">
-    <h1 class="text-xl font-medium font-sans text-[#002168] mb-1 mx-60 pt-10">Booking Summary</h1>
-    <div class="bg-white shadow-xl rounded-3xl p-10 max-w-4xl mx-auto mt-10">
+    <h1 class="text-xl font-medium font-sans text-[#002168] mb-1 mx-60  pt-10">Booking Summary</h1>
+    <div class="bg-white shadow-xl rounded-3xl p-10 lg:max-w-4xl md:max-w-2xl max-w-xl mx-auto mt-10">
 
         <!-- Steps -->
         <div class="flex justify-between items-center mb-12 max-w-2xl mx-auto mt-6">

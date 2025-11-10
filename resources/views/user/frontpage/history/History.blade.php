@@ -107,38 +107,38 @@
           <div class="campaign-card bg-white rounded-2xl shadow-lg hover:shadow-md  p-6 cursor-pointer">
               <div class="flex justify-between">
                   <div>
-                      <h2 class="text-lg font-semibold text-[#234693]">Singanallur Signal</h2>
+                      <h2 class=" text-sm md:text-lg font-semibold text-[#234693]">Singanallur Signal</h2>
                       <div class="flex gap-2 mt-2">
                           <i class="fa-solid fa-location-dot text-[#747474] text-sm mt-1.5"></i>
-                          <p class="text-sm text-[#747474] mt-1">Ukkadam, Coimbatore</p>
+                          <p class=" text-xs md:text-sm text-[#747474] mt-1">Ukkadam, Coimbatore</p>
                       </div>
 
                   </div>
                   <div class="text-right">
-                      <span class="bg-[#21C45D] text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</span>
+                      <span class="bg-[#21C45D] text-white px-3 py-1 rounded-full  text-xs md:text-sm font-semibold">Completed</span>
                       <p class="text-xs text-[#989898] mt-2">22 Jan 2025</p>
                   </div>
               </div>
 
-              <div class="grid grid-cols-4 mt-6 text-sm text-gray-600">
+              <div class="grid grid-cols-4 mt-6 text-sm text-gray-600 gap-5">
                   <div>
-                      <p class="font-medium text-black mb-1">Banner seats</p>
-                      <p class="text-sm text-[#3C83F6] font-bold">2</p>
+                      <p class="font-medium text-black mb-1 text-xs md:text-sm">Banner seats</p>
+                      <p class="text-xs md:text-sm text-[#3C83F6] font-bold">2</p>
                   </div>
 
                   <div>
-                      <p class="font-medium text-black mb-1">Duration</p>
-                      <p class="text-[#3C83F6] font-semibold text-sm">3 Months</p>
+                      <p class="font-medium text-black mb-1 text-xs md:text-sm">Duration</p>
+                      <p class="text-[#3C83F6] font-semibold text-xs md:text-sm">3 Months</p>
                   </div>
 
                   <div>
-                      <p class="font-medium text-black mb-1">Campaign Period</p>
-                      <p class="text-[#3C83F6] font-semibold text-sm">1 Nov 2024 - 23 Jan 2025</p>
+                      <p class="font-medium text-black mb-1 text-xs md:text-sm">Campaign Period</p>
+                      <p class="text-[#3C83F6] font-semibold text-xs md:text-sm">1 Nov 2024 - 23 Jan 2025</p>
                   </div>
 
                   <div class="text-right">
-                      <p class="font-medium  text-black mb-1">Investment</p>
-                      <p class="text-[#3C83F6] font-bold text-sm">$1,50,000</p>
+                      <p class="font-medium  text-black mb-1 text-xs md:text-sm">Investment</p>
+                      <p class="text-[#3C83F6] font-bold text-xs md:text-sm">$1,50,000</p>
                   </div>
               </div>
           </div>
@@ -149,37 +149,37 @@
           <div class="campaign-card bg-white rounded-2xl shadow-lg hover:shadow-md  p-6 cursor-pointer">
               <div class="flex justify-between">
                   <div>
-                      <h2 class="text-lg font-semibold text-[#234693]">Singanallur Signal</h2>
+                      <h2 class="text-sm md:text-lg font-semibold text-[#234693]">Singanallur Signal</h2>
                       <div class="flex gap-2 mt-2">
                           <i class="fa-solid fa-location-dot text-[#747474] text-sm mt-1.5"></i>
-                          <p class="text-sm text-[#747474] mt-1">Ukkadam, Coimbatore</p>
+                          <p class="text-xs md:text-sm text-[#747474] mt-1">Ukkadam, Coimbatore</p>
                       </div>
                   </div>
                   <div class="text-right">
-                      <span class="bg-[#21C45D] text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</span>
+                      <span class="bg-[#21C45D] text-white px-3 py-1 rounded-full text-xs md:text-sm font-semibold">Completed</span>
                       <p class="text-xs text-[#989898] mt-2">22 Jan 2025</p>
                   </div>
               </div>
 
-              <div class="grid grid-cols-4 mt-6 text-sm text-gray-600">
+              <div class="grid grid-cols-4 mt-6 text-sm text-gray-600 gap-5">
                   <div>
-                      <p class="font-medium text-black mb-1">Banner seats</p>
-                      <p class="text-sm text-[#3C83F6] font-bold">2</p>
+                      <p class="font-medium text-black mb-1 text-xs md:text-sm">Banner seats</p>
+                      <p class="text-xs md:text-sm text-[#3C83F6] font-bold">2</p>
                   </div>
 
                   <div>
-                      <p class="font-medium text-black mb-1">Duration</p>
-                      <p class="text-[#3C83F6] font-semibold text-sm">3 Months</p>
+                      <p class="font-medium text-black mb-1 text-xs md:text-sm">Duration</p>
+                      <p class="text-[#3C83F6] font-semibold text-xs md:text-sm">3 Months</p>
                   </div>
 
                   <div>
-                      <p class="font-medium text-black mb-1">Campaign Period</p>
-                      <p class="text-[#3C83F6] font-semibold text-sm">1 Nov 2024 - 23 Jan 2025</p>
+                      <p class="font-medium text-black mb-1 text-xs md:text-sm">Campaign Period</p>
+                      <p class="text-[#3C83F6] font-semibold text-xs md:text-sm">1 Nov 2024 - 23 Jan 2025</p>
                   </div>
 
                   <div class="text-right">
-                      <p class="font-medium  text-black mb-1">Investment</p>
-                      <p class="text-[#3C83F6] font-bold text-sm">$1,50,000</p>
+                      <p class="font-medium  text-black mb-1 text-xs md:text-sm">Investment</p>
+                      <p class="text-[#3C83F6] font-bold text-xs md:text-sm">$1,50,000</p>
                   </div>
               </div>
           </div>
@@ -191,37 +191,37 @@
           <div class="campaign-card bg-white rounded-2xl shadow-lg hover:shadow-md  p-6 cursor-pointer">
               <div class="flex justify-between">
                   <div>
-                      <h2 class="text-lg font-semibold text-[#234693]">Singanallur Signal</h2>
+                      <h2 class="text-sm md:text-lg font-semibold text-[#234693]">Singanallur Signal</h2>
                       <div class="flex gap-2 mt-2">
                           <i class="fa-solid fa-location-dot text-[#747474] text-sm mt-1.5"></i>
-                          <p class="text-sm text-[#747474] mt-1">Ukkadam, Coimbatore</p>
+                          <p class="text-xs md:text-sm text-[#747474] mt-1">Ukkadam, Coimbatore</p>
                       </div>
                   </div>
                   <div class="text-right">
-                      <span class="bg-[#21C45D] text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</span>
+                      <span class="bg-[#21C45D] text-white px-3 py-1 rounded-full text-xs md:text-sm font-semibold">Completed</span>
                       <p class="text-xs text-[#989898] mt-2">22 Jan 2025</p>
                   </div>
               </div>
 
-              <div class="grid grid-cols-4 mt-6 text-sm text-gray-600">
+              <div class="grid grid-cols-4 mt-6 text-sm text-gray-600 gap-3">
                   <div>
-                      <p class="font-medium text-black mb-1">Banner seats</p>
-                      <p class="text-sm text-[#3C83F6] font-bold">2</p>
+                      <p class="font-medium text-black mb-1 text-xs md:text-sm">Banner seats</p>
+                      <p class="text-xs md:text-sm text-[#3C83F6] font-bold">2</p>
                   </div>
 
                   <div>
-                      <p class="font-medium text-black mb-1">Duration</p>
-                      <p class="text-[#3C83F6] font-semibold text-sm">3 Months</p>
+                      <p class="font-medium text-black mb-1 text-xs md:text-sm">Duration</p>
+                      <p class="text-[#3C83F6] font-semibold text-xs md:text-sm">3 Months</p>
                   </div>
 
                   <div>
-                      <p class="font-medium text-black mb-1">Campaign Period</p>
-                      <p class="text-[#3C83F6] font-semibold text-sm">1 Nov 2024 - 23 Jan 2025</p>
+                      <p class="font-medium text-black mb-1 text-xs md:text-sm">Campaign Period</p>
+                      <p class="text-[#3C83F6] font-semibold text-xs md:text-sm">1 Nov 2024 - 23 Jan 2025</p>
                   </div>
 
                   <div class="text-right">
-                      <p class="font-medium  text-black mb-1">Investment</p>
-                      <p class="text-[#3C83F6] font-bold text-sm">$1,50,000</p>
+                      <p class="font-medium  text-black mb-1 text-xs md:text-sm">Investment</p>
+                      <p class="text-[#3C83F6] font-bold text-xs md:text-sm">$1,50,000</p>
                   </div>
               </div>
           </div>
@@ -233,37 +233,37 @@
           <div class="campaign-card bg-white rounded-2xl shadow-lg hover:shadow-md  p-6 cursor-pointer">
               <div class="flex justify-between">
                   <div>
-                      <h2 class="text-lg font-semibold text-[#234693]">Singanallur Signal</h2>
+                      <h2 class="text-sm md:text-lg font-semibold text-[#234693]">Singanallur Signal</h2>
                       <div class="flex gap-2 mt-2">
                           <i class="fa-solid fa-location-dot text-[#747474] text-sm mt-1.5"></i>
-                          <p class="text-sm text-[#747474] mt-1">Ukkadam, Coimbatore</p>
+                          <p class="text-xs md:text-sm text-[#747474] mt-1">Ukkadam, Coimbatore</p>
                       </div>
                   </div>
                   <div class="text-right">
-                      <span class="bg-[#21C45D] text-white px-3 py-1 rounded-full text-sm font-semibold">Completed</span>
+                      <span class="bg-[#21C45D] text-white px-3 py-1 rounded-full text-xs md:text-sm font-semibold">Completed</span>
                       <p class="text-xs text-[#989898] mt-2">22 Jan 2025</p>
                   </div>
               </div>
 
-              <div class="grid grid-cols-4 mt-6 text-sm text-gray-600">
+              <div class="grid grid-cols-4 mt-6 text-sm text-gray-600 gap-3">
                   <div>
-                      <p class="font-medium text-black mb-1">Banner seats</p>
-                      <p class="text-sm text-[#3C83F6] font-bold">2</p>
+                      <p class="font-medium text-black mb-1 text-xs md:text-sm">Banner seats</p>
+                      <p class="text-xs md:text-sm text-[#3C83F6] font-bold">2</p>
                   </div>
 
                   <div>
-                      <p class="font-medium text-black mb-1">Duration</p>
-                      <p class="text-[#3C83F6] font-semibold text-sm">3 Months</p>
+                      <p class="font-medium text-black mb-1 text-xs md:text-sm">Duration</p>
+                      <p class="text-[#3C83F6] font-semibold text-xs md:text-sm">3 Months</p>
                   </div>
 
                   <div>
-                      <p class="font-medium text-black mb-1">Campaign Period</p>
-                      <p class="text-[#3C83F6] font-semibold text-sm">1 Nov 2024 - 23 Jan 2025</p>
+                      <p class="font-medium text-black mb-1 text-xs md:text-sm">Campaign Period</p>
+                      <p class="text-[#3C83F6] font-semibold text-xs md:text-sm">1 Nov 2024 - 23 Jan 2025</p>
                   </div>
 
                   <div class="text-right">
-                      <p class="font-medium  text-black mb-1">Investment</p>
-                      <p class="text-[#3C83F6] font-bold text-sm">$1,50,000</p>
+                      <p class="font-medium  text-black mb-1 text-xs md:text-sm">Investment</p>
+                      <p class="text-[#3C83F6] font-bold text-xs md:text-sm">$1,50,000</p>
                   </div>
               </div>
           </div>

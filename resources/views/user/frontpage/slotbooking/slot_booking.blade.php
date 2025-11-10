@@ -24,7 +24,7 @@
      </div>
 
 
-     <div class="flex justify-center items-center min-h-screen  py-20">
+     <div class="flex justify-center items-center lg:min-h-screen px-5  py-20">
          <div class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-5xl">
 
              <!-- Step Header -->
