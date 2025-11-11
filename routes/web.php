@@ -88,9 +88,8 @@ Route::get('/example', function () {
     return view('user.frontpage.example');
 })->name('example');
 
-use App\Http\Controllers\VisualMarkerController;
 
-Route::get('/Visual_Markers', [VisualMarkerController::class, 'index']);
+
 
 
 

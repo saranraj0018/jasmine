@@ -17,13 +17,13 @@
     </nav>
 
     <!-- Desktop Buttons -->
-    <div class="hidden md:flex items-center space-x-3">
+    <div class="hidden md:flex items-center justify-center  space-x-3">
       <button id="loginBtn"
         class="bg-white text-gray-800 px-5 py-2 rounded-full shadow hover:bg-gray-100 transition">
         Login
       </button>
 
-      <a href=""
+      <a id="signupBtn"
         class="bg-gradient-to-r from-[#0033A8] to-[#001442] text-xs text-white px-5 py-2 rounded-full shadow hover:opacity-90 transition">
         Sign Up
       </a>
@@ -49,7 +49,7 @@
 
       <a href="{{ route('menu') }}" class="text-gray-700 hover:text-indigo-700 transition">Profile</a>
 
-      <div class="flex space-x-3 pt-2">
+      <div class="flex space-x-3  pt-2">
         <button id="loginBtn" class="px-5 py-2 bg-white text-gray-800 rounded-full hover:bg-gray-100 transition">
           Login
         </button>
@@ -64,7 +64,8 @@
 
 <!-- Login Modal -->
 <div id="loginPopup"
-  class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-50 animate-fadeIn  ">
+  class="hidden h-[80vh] fixed w-full z-50 mt-20 ">
+  <div class="flex items-center justify-center">
 
   <div class="bg-gradient-to-t from-[#ffffff] to-[#E5F6FF] p-6 rounded-3xl w-[90%] md:w-1/2 relative shadow-xl">
 
@@ -85,14 +86,14 @@
       <div class="mb-3 mt-5">
         <label class=" fa fa-envelope block text-sm font-medium text-[#1C356E] mb-1"> Email</label>
         <input type="email" placeholder="Enter Your Email"
-          class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="w-full border text-sm font-medium text-black border-gray-300 bg-[#ebf5fb] focus:outline-none rounded-3xl px-3 py-2 "
           required>
       </div>
 
       <div class="mb-3">
         <label class=" fa fa-lock block text-sm font-medium text-[#1C356E] mb-1"> Password</label>
         <input type="password" placeholder="Enter Your Password"
-          class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="w-full border text-sm font-light text-black border-gray-300 bg-[#ebf5fb] focus:outline-none rounded-3xl px-3 py-2  "
           required>
       </div>
 
@@ -102,7 +103,7 @@
 
       <div class="flex justify-center">
         <button type="submit"
-          class="w-[10rem] bg-gradient-to-b from-[#0033A8] to-[#001442] text-white text-sm font-medium rounded-3xl py-2 hover:opacity-90 transition">
+          class="w-40 bg-gradient-to-b from-[#0033A8] to-[#001442] text-white text-sm font-medium rounded-3xl py-2 hover:opacity-90 transition">
           Login
         </button>
       </div>
@@ -114,6 +115,7 @@
     </form>
 
   </div>
+  </div>  
 </div>
 
 <!-- Signup Popup -->
@@ -135,21 +137,21 @@
           <div class="mb-3">
             <i class="fa fa-user text-sm font-medium text-[#1C356E] mb-1"> Full Name</i>
             <input type="text" placeholder="Enter Your Full Name"
-              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              class="w-full border text-sm font-light border-gray-300 bg-[#ebf5fb] focus:outline-none rounded-3xl px-3 py-2 text-black"
               required>
           </div>
 
           <div class="mb-3">
             <i class="fa fa-building text-sm font-medium text-[#1C356E] mb-1"> Company Name</i>
             <input type="text" placeholder="Enter Your Company Name"
-              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              class="w-full border text-sm font-light text-black border-gray-300 bg-[#ebf5fb] focus:outline-none rounded-3xl px-3 py-2 "
               required>
           </div>
 
           <div class="mb-3">
             <i class="fa fa-file-lines text-sm font-medium text-[#1C356E] mb-1"> GST Number</i>
             <input type="text" placeholder="Enter Your GST Number"
-              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              class="w-full border text-sm font-light text-black border-gray-300 bg-[#ebf5fb] focus:outline-none rounded-3xl px-3 py-2 "
               required>
           </div>
         </div>
@@ -159,28 +161,28 @@
           <div class="mb-3">
             <i class="fa fa-envelope text-sm font-medium text-[#1C356E] mb-1"> Email</i>
             <input type="email" placeholder="Enter Your Email"
-              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              class="w-full border text-sm font-light text-black border-gray-300 bg-[#ebf5fb] focus:outline-none rounded-3xl px-3 py-2 "
               required>
           </div>
 
           <div class="mb-3">
             <i class="fa fa-phone text-sm font-medium text-[#1C356E] mb-1"> Phone Number</i>
             <input type="tel" placeholder="Enter Your Phone Number"
-              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              class="w-full border text-sm font-light text-black border-gray-300 bg-[#ebf5fb] focus:outline-none rounded-3xl px-3 py-2 "
               required>
           </div>
 
           <div class="mb-3">
             <i class="fa fa-lock text-sm font-medium text-[#1C356E] mb-1"> Password</i>
             <input type="password" placeholder="Enter Your Password"
-              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              class="w-full border text-sm font-light text-black border-gray-300 bg-[#ebf5fb] focus:outline-none rounded-3xl px-3 py-2 "
               required>
           </div>
 
           <div class="mb-3">
             <i class="fa fa-lock text-sm font-medium text-[#1C356E] mb-1"> Confirm Password</i>
             <input type="password" placeholder="Confirm Password"
-              class="w-full border text-sm font-light text-black border-gray-300 bg-[#254693] opacity-5 rounded-3xl px-3 py-2 "
+              class="w-full border text-sm font-light text-black border-gray-300 bg-[#ebf5fb] focus:outline-none rounded-3xl px-3 py-2 "
               required>
           </div>
           

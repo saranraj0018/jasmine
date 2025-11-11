@@ -6,11 +6,11 @@
   </section>
 
   <!--about details-->
-  <section class="mx-auto max-w-6xl pt-20">
+  <section class="mx-auto max-w-6xl pt-5 px-5 md:pt-10 lg:pt-20">
       <div class="grid grid-cols-12 gap-7">
           <div class="col-span-5">
               <img src="./img/about1.png" class="w-full " alt="about" />
-              <h2 class="text-2xl text-white font-semibold font-sans mt-[-165px] px-7 ">We specialise in <br> helping our customers<br> digitise their business</h2>
+              <h2 class=" text-lg md:text-lg lg:text-2xl text-white font-semibold font-sans  mt-30 md:mt-[-110px] lg:mt-[-165px] px-7 ">We specialise in <br> helping our customers<br> digitise their business</h2>
           </div>
           <div class="col-span-7 pe-10">
               <h2 class="text-xl font-semibold font-sans  text-[#002F65]">Who We Are</h2>
@@ -20,30 +20,30 @@
           </div>
       </div>
 
-      <div class="grid grid-cols-12 py-20 gap-10 max-w-5xl mx-auto">
+      <div class="grid grid-cols-12 py-5  md:py-10 lg:py-20 gap-10 max-w-5xl mx-auto">
           <div class="col-span-4 bg-[url('./img/about3.png')] bg-cover bg-no-repeat bg-top py-3 px-3 rounded-xl">
               <div class="flex gap-4 ">
                   <img src="./img/about2.png" class="p-0" alt="img" />
-                  <p class="text-lg text-white font-semibold font-sans pt-3">Solving Complex<br> Problem</p>
+                  <p class="  text-sm md:text-sm lg:text-lg text-white font-semibold font-sans pt-3">Solving Complex<br> Problem</p>
               </div>
           </div>
           <div class="col-span-4 bg-[url('./img/about3.png')] bg-cover bg-no-repeat bg-top py-3 px-3 rounded-xl">
               <div class="flex gap-4 ">
                   <img src="./img/image 78 (1).png" class="" alt="img" />
-                  <p class="text-lg text-white font-semibold font-sans pt-3">We Guarantee Trusted <br>Service</p>
+                  <p class="text-sm md:text-sm lg:text-lg text-white font-semibold font-sans pt-3">We Guarantee Trusted <br>Service</p>
               </div>
           </div>
           <div class="col-span-4 bg-[url('./img/about3.png')] bg-cover bg-no-repeat bg-top py-3 px-3 rounded-xl">
               <div class="flex gap-4 ">
                   <img src="./img/image 79 (1).png" class="" alt="img" />
-                  <p class="text-lg text-white font-semibold font-sans pt-2">Experts in advertisement <br>fields</p>
+                  <p class="text-sm md:text-sm lg:text-lg text-white font-semibold font-sans pt-2">Experts in advertisement <br>fields</p>
               </div>
           </div>
       </div>
   </section>
 
   <!--section -3 -->
-  <section class="mx-auto max-w-6xl">
+  <section class="mx-auto max-w-6xl px-5">
       <div class="grid grid-cols-12 gap-10">
           <div class="col-span-9 bg-[#E5F6FF] rounded-xl px-5 py-5">
               <div class="grid grid-cols-10 gap-5">
@@ -68,10 +68,10 @@
 
 
   <!-- -->
-  <section class="mx-auto max-w-5xl py-10">
+  <section class="mx-auto max-w-5xl py-10 px-5">
       <div class="grid grid-cols-12">
           <div class="col-span-6">
-              <h2 class="text-4xl font-sans font-semibold text-[#005DE0]">Accelerate <br> innovation with <br>world-class <br>advertisement team </h2>
+              <h2 class="  text-xl md:text-3xl lg:text-4xl font-sans font-semibold text-[#005DE0]">Accelerate <br> innovation with <br>world-class <br>advertisement team </h2>
           </div>
           <div class="col-span-6">
               <div class="w-full">
@@ -112,7 +112,7 @@
 
   <!--- -->
 
-  <section class="mx-auto max-w-5xl py-10">
+  <section class="mx-auto max-w-5xl py-10 px-5">
       <div class=" grid grid-cols-12 bg-[url('./img/banner2.png')] bg-cover bg-no-repeat py-10 px-7 rounded-2xl ">
           <div class="col-span-3 ">
               <img src="./img/icon1.png" class="w-8 h-8 mx-auto" alt="img" />
