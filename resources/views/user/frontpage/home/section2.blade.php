@@ -1,3 +1,4 @@
+ <script src="/user/js/plots.js"></script>
  <section class="max-w-7xl mx-auto md:py-10 lg:py-10 py-4 px-5">
      <h2 class="md:text-3xl lg:text-3xl text-xl font-[Inter] font-medium text-[#234693]">Available Plots</h2>
      <p class="text-sm Font-[Inter] font-normal text-black py-3">Browse and book advertising banner plots across the
@@ -38,12 +39,61 @@
 
              </div>
              <div class="flex justify-center pt-5">
-                 <button
-                     class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter'] lg:px-20 px-10 lg:my-3 lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition">
-                     Book Now
-                 </button>
+        <button id="openAdModalBtn"
+          class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter']  lg:px-20 px-10 lg:my-3  lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition  ">
+          Book Now
+        </button>
+      </div>
+      <!-- Popup Modal -->
+      <div id="adModal" class="fixed inset-0 hidden bg-black bg-opacity-40 items-center justify-center z-50">
+        <div class="bg-white rounded-3xl shadow-xl max-w-4xl w-full mx-4 p-10 relative">
 
-             </div>
+          <!-- Close Button -->
+          <button id="closeAdModalBtn" class="absolute top-4 right-6 text-gray-400 hover:text-gray-600 text-2xl">
+            &times;
+          </button>
+
+          <!-- Modal Content -->
+          <h3 class="text-center text-lg font-semibold text-black mb-2">
+            Select Advertisement Type
+          </h3>
+          <p class="text-center text-sm text-black mb-8">
+            Choose the type of advertising that best suits your needs
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Pole Ads -->
+            <div class="cursor-pointer border border-gray-100  shadow-xl rounded-2xl p-6 text-center transition bg-white ">
+              <div class="flex flex-col  ">
+                <div class="flex  mb-3 gap-4 bg-gradient-to-t from-[#ffffff] to-[#E5F6FF] relative rounded-2xl py-5 px-5">
+                  <img src="./img/image 105.png" class="w [-10rem] " alt="img" />
+                  <h4 id="poleAdsLink" class="text-[#234693] font-semibold text-lg mb-1"><a href="{{ route('poleads') }}">Pole Ads</a></p>
+                  </h4>
+
+                </div>
+                <p class="text-black  text-left text-sm pt-3">
+                  Premium outdoor advertising on strategic pole locations across multiple lakes.
+                </p>
+              </div>
+            </div>
+
+            <!-- Visual Markers -->
+            <div class="cursor-pointer border border-gray-100  shadow-xl rounded-2xl p-6 text-center transition bg-white ">
+              <div class="flex flex-col  ">
+                <div class="flex  mb-3 gap-4 bg-gradient-to-t from-[#ffffff] to-[#E5F6FF] relative rounded-2xl py-5 px-5">
+                  <img src="./img/image 106.png" class="w [-10rem]" alt="img" />
+                  <h4 class="text-[#234693] font-semibold text-lg mb-1"><a href="{{ route('Visual_Markers') }}">Visual Markers</a></h4>
+                </div>
+                <p class="text-black  text-left text-sm pt-3">
+                  High-Visibility markers for enhanced brand presence and wayfinding
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
          </div>
          <div class=" col-span-12 lg:col-span-4 md:col-span-4  bg-[#EEF7FF] py-3 px-3 md:py-5 rounded-2xl ">
@@ -78,11 +128,11 @@
 
              </div>
              <div class="flex justify-center pt-5">
-                 <button
-                     class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter']  lg:px-20 px-10 lg:my-3  lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition  ">
-                     Book Now
-                 </button>
-             </div>
+        <button id="openAdModalBtn1"
+          class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter']  lg:px-20 px-10 lg:my-3  lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition  ">
+          Book Now
+        </button>
+      </div>
 
          </div>
          <div class=" col-span-12 lg:col-span-4 md:col-span-4 bg-[#EEF7FF] py-3 px-3 md:py-5 rounded-2xl ">
@@ -117,11 +167,11 @@
 
              </div>
              <div class="flex justify-center pt-5">
-                 <button
-                     class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter']  lg:px-20 px-10 lg:my-3  lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition  ">
-                     Book Now
-                 </button>
-             </div>
+        <button id="openAdModalBtn2"
+          class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter']  lg:px-20 px-10 lg:my-3  lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition  ">
+          Book Now
+        </button>
+      </div>
 
          </div>
      </div>
@@ -161,11 +211,11 @@
 
              </div>
              <div class="flex justify-center pt-5">
-                 <button
-                     class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter']  lg:px-20 px-10 lg:my-3  lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition  ">
-                     Book Now
-                 </button>
-             </div>
+        <button id="openAdModalBtn3"
+          class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter']  lg:px-20 px-10 lg:my-3  lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition  ">
+          Book Now
+        </button>
+      </div>
 
          </div>
          <div class=" col-span-12 lg:col-span-4 md:col-span-4  bg-[#EEF7FF] py-3 px-3 md:py-5 rounded-2xl ">
@@ -200,11 +250,11 @@
 
              </div>
              <div class="flex justify-center pt-5">
-                 <button
-                     class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter']  lg:px-20 px-10 lg:my-3  lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition  ">
-                     Book Now
-                 </button>
-             </div>
+        <button id="openAdModalBtn4"
+          class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter']  lg:px-20 px-10 lg:my-3  lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition  ">
+          Book Now
+        </button>
+      </div>
 
          </div>
          <div class=" col-span-12 lg:col-span-4 md:col-span-4 bg-[#EEF7FF] py-3 px-3 md:py-5 rounded-2xl ">
@@ -239,11 +289,11 @@
 
              </div>
              <div class="flex justify-center pt-5">
-                 <button
-                     class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter']  lg:px-20 px-10 lg:my-3  lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition  ">
-                     Book Now
-                 </button>
-             </div>
+        <button id="openAdModalBtn5"
+          class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter']  lg:px-20 px-10 lg:my-3  lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition  ">
+          Book Now
+        </button>
+      </div>
 
          </div>
      </div>
@@ -283,11 +333,11 @@
 
              </div>
              <div class="flex justify-center pt-5">
-                 <button
-                     class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter']  lg:px-20 px-10 lg:my-3  lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition  ">
-                     Book Now
-                 </button>
-             </div>
+        <button id="openAdModalBtn6"
+          class="bg-gradient-to-b from-[#0033A8] to-[#001442] text-white lg:text-sm text-xs font-medium font-['Inter']  lg:px-20 px-10 lg:my-3  lg:py-2 py-3 rounded-full shadow-md hover:opacity-90 transition  ">
+          Book Now
+        </button>
+      </div>
 
          </div>
          <div class=" col-span-12 lg:col-span-4 md:col-span-4  ">
