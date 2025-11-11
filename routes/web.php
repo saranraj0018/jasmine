@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home'); // ✅ 
-});
 
 Route::post('/menu', function () {
     return 'Menu route works!';
@@ -34,6 +31,70 @@ Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
 
-Route::get('/register', function () {
-    return view('auth.register');
-})->name('register');
+
+Route::get('/poleads', function () {
+    return view('user.frontpage.available-plots.poleads');
+})->name('poleads');
+Route::get('/slot-booking', function () {
+    return view('user.frontpage.slotbooking.slot_booking');
+})->name('slot.booking');
+Route::get('/Select_Duration', function () {
+    return view('user.frontpage.duration.Select_duration');
+})->name('Select_Duration');
+Route::get('/payment', function () {
+    return view('user.frontpage.payment.payment');
+})->name('payment');
+
+use App\Http\Controllers\AdvertisementController;
+use App\Http\Controllers\BookingController;
+
+
+
+Route::get('/ads', [AdvertisementController::class, 'index'])->name('ads.index');
+Route::get('/book/{area}', [AdvertisementController::class, 'book'])->name('ads.book');
+
+Route::post('/booking/confirm', [BookingController::class, 'confirm'])->name('booking.confirm');
+Route::get('/booking/summary', function () {
+    return view('booking.summary');
+})->name('booking.summary');
+
+
+Route::get('/about', function () {
+    return view('user.frontpage.about.main');
+});
+Route::get('/Services', function () {
+    return view('user.frontpage.about.Services');
+});
+Route::get('/contact', function () {
+    return view('user.frontpage.about.contact');
+});
+Route::get('/Visual_Markers', function () {
+    return view('user.frontpage.VisualMarkers.Visual_Markers');
+})->name('Visual_Markers');
+
+Route::get('/my_booking', function () {
+    return view('user.frontpage.booking.my_booking');
+})->name('my_booking');
+Route::get('/History', function () {
+    return view('user.frontpage.history.History');
+})->name('History');
+Route::get('/Profile', function () {
+    return view('user.frontpage.profile.Profile');
+})->name('Profile');
+Route::get('/Dashboard', function () {
+    return view('user.frontpage.dashboard.Dashboard');
+})->name('Dashboard');
+Route::get('/example', function () {
+    return view('user.frontpage.example');
+})->name('example');
+
+use App\Http\Controllers\VisualMarkerController;
+
+Route::get('/Visual_Markers', [VisualMarkerController::class, 'index']);
+
+
+
+
+Route::get('/', function () {
+    return view('user.frontpage.home.home'); // ✅ 
+});

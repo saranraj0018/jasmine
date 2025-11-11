@@ -1,16 +1,35 @@
-const loginBtn = document.getElementById('loginBtn');
-  const loginModal = document.getElementById('loginModal');
-  const closeModal = document.getElementById('closeModal');
+$(document).ready(function() {
+      // === LOGIN POPUP ===
+      $("#loginBtn").click(function() {
+        $("#loginPopup").fadeIn(200);
+        $("#loginPopup .popup-content").addClass("popup-show");
+      });
 
-  loginBtn.addEventListener('click', () => {
-    loginModal.classList.remove('hidden');
-  });
+      $("#closeLogin").click(function() {
+        $("#loginPopup .popup-content").removeClass("popup-show");
+        setTimeout(() => $("#loginPopup").fadeOut(200), 150);
+      });
 
-  closeModal.addEventListener('click', () => {
-    loginModal.classList.add('hidden');
-  });
+      // === SIGNUP POPUP ===
+      $("#signupBtn").click(function() {
+        $("#signupPopup").fadeIn(200);
+        $("#signupPopup .popup-content").addClass("popup-show");
+      });
 
-  // Optional: close modal on background click
-  loginModal.addEventListener('click', (e) => {
-    if (e.target === loginModal) loginModal.classList.add('hidden');
-  });
+      $("#closeSignup").click(function() {
+        $("#signupPopup .popup-content").removeClass("popup-show");
+        setTimeout(() => $("#signupPopup").fadeOut(200), 150);
+      });
+
+      // === CLICK OUTSIDE TO CLOSE ===
+      $(window).click(function(e) {
+        if ($(e.target).is("#loginPopup")) {
+          $("#loginPopup .popup-content").removeClass("popup-show");
+          setTimeout(() => $("#loginPopup").fadeOut(200), 150);
+        }
+        if ($(e.target).is("#signupPopup")) {
+          $("#signupPopup .popup-content").removeClass("popup-show");
+          setTimeout(() => $("#signupPopup").fadeOut(200), 150);
+        }
+      });
+    });
