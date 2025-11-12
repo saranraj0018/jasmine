@@ -8,6 +8,7 @@ class VisualMarkerController extends Controller
 {
     public function index()
     {
+        // Static data (you can later replace with DB data)
         $locations = [
             [
                 'title' => 'Valankulam',
@@ -31,22 +32,22 @@ class VisualMarkerController extends Controller
                 'url'   => url('/markers/selva-chinthamani'),
             ],
             [
-                'title' => 'Valankulam',
+                'title' => 'Valankulam (Duplicate)',
                 'seats' => 10,
                 'image' => 'img/visual.png',
                 'place' => 'Periyakulam Lake',
-                'url'   => url('/markers/selva-chinthamani'),
+                'url'   => url('/markers/valankulam-2'),
             ],
             [
-                'title' => 'Selva Chinthamani Kulam',
+                'title' => 'Selva Chinthamani Kulam (Duplicate)',
                 'seats' => 10,
                 'image' => 'img/visual.png',
                 'place' => 'Gandhipuram',
-                'url'   => url('/markers/selva-chinthamani'),
+                'url'   => url('/markers/selva-chinthamani-2'),
             ],
         ];
 
-        // Return the view with compacted data
+        // ✅ Return view properly with compact() variable
         return view('user.frontpage.VisualMarkers.Visual_Markers', compact('locations'));
     }
 }

@@ -97,7 +97,7 @@
     <!-- Card Section -->
     <section class=" my-7 ">
         <div class="grid grid-cols-12 gap-5">
-            @foreach ($locations as $location)
+@foreach ($locations as $location)
                 <div class="col-span-12 md:col-span-4 lg:col-span-4 bg-white shadow-xl rounded-3xl">
                     <img src="{{ asset($location['image']) }}" class="w-full rounded-t-3xl" alt="{{ $location['title'] }}" />
 
