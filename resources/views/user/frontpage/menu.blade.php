@@ -1,5 +1,5 @@
 <header class="fixed top-0 w-full z-10 ">
-  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+  <div class="max-w-7xl mx-auto  px-4 py-3 md:px-2 md:py-2 lg:px-4 lg:py-3  flex items-center justify-between">
 
     <!-- Logo -->
     <div class="flex items-center">
@@ -7,24 +7,48 @@
     </div>
 
     <!-- Desktop Menu -->
-    <nav class="hidden md:flex items-center space-x-2 bg-white rounded-full px-2 py-1 shadow-sm">
-      <a href="{{ url('/') }}" class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">Home</a>
-      <a href="{{ url('/') }}" class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">Available Plots</a>
-      <a href="#about" class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">About Us</a>
-      <a href="#services" class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">Services</a>
-      <a href="#contact" class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">Contact</a>
-      <a href="{{ route('menu') }}" class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">Profile</a>
-    </nav>
+    <nav class="hidden md:flex items-center space-x-1 md:space-x-2 bg-white rounded-full px-2 md:px-1 lg:px-2 py-1 shadow-sm">
+  <a href="" 
+     class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">
+     Home
+  </a>
+
+  <a href="" 
+     class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">
+     Available Plots
+  </a>
+
+  <a href="" 
+     class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">
+     About Us
+  </a>
+
+  <a href="" 
+     class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">
+     Services
+  </a>
+
+  <a href="" 
+     class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">
+     Contact
+  </a>
+
+  <a href="" 
+     class="px-4 py-2 text-xs font-medium text-gray-700 hover:text-indigo-700 rounded-full transition">
+     Profile
+  </a>
+</nav>
+
 
     <!-- Desktop Buttons -->
-    <div class="hidden md:flex items-center justify-center  space-x-3">
+    <div class="hidden md:flex items-center justify-center space-x-3 md:space-x-2 lg:space-x-3">
       <button id="loginBtn"
-        class="bg-white text-gray-800 px-5 py-2 rounded-full shadow hover:bg-gray-100 transition">
+        class="bg-white text-xs text-gray-800 px-5 py-3 md:px-3 md:py-2 lg:px-5 lg:py-3 rounded-full shadow hover:bg-gray-100 transition">
         Login
       </button>
 
       <a id="signupBtn"
-        class="bg-gradient-to-r from-[#0033A8] to-[#001442] text-xs text-white px-5 py-2 rounded-full shadow hover:opacity-90 transition">
+        class="bg-gradient-to-r from-[#0033A8] to-[#001442] text-xs text-white px-5 py-3 md:px-3 md:py-2 lg:px-5 lg:py-3 rounded-full shadow hover:opacity-90 transition">
         Sign Up
       </a>
 
@@ -54,7 +78,7 @@
           Login
         </button>
         <button id="signupBtn"
-          class="bg-linear-to-r from-[#0033A8] to-[#001442] text-white px-5 py-2 rounded-full shadow hover:opacity-90 transition">
+          class="bg-gradient-to-r from-[#0033A8] to-[#001442] text-white px-5 py-2 rounded-full shadow hover:opacity-90 transition">
           Sign Up
         </button>
       </div>

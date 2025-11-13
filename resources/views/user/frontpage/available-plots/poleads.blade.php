@@ -22,7 +22,7 @@
         name="search"
         placeholder="Search by location or plot name"
         value="{{ request('search') }}"
-        class="flex-1 bg-transparent outline-none px-4 py-2 text-black placeholder-gray-400" />
+        class="flex-1 bg-transparent outline-none px-4 pt-4 text-black placeholder-gray-400" />
       <button type="submit" class="hidden"></button>
     </form>
 
@@ -433,3 +433,5 @@
 
     </section>
   </div>
+
+  

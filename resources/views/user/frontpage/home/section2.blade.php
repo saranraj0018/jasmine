@@ -260,7 +260,7 @@
          <div class=" col-span-12 lg:col-span-4 md:col-span-4 bg-[#EEF7FF] py-3 px-3 md:py-5 rounded-2xl ">
              <div class="flex justify-between gap-0">
                  <h3 class="lg:text-xl  text-sm font-[Inter] font-medium text-[#234693]">Ukkadam Lake</h3>
-                 <div class="flex items-center space-x-2 bg-green-200 text-[#05BD49]px-3 py-1 rounded-full w-fit">
+                 <div class="flex items-center space-x-2 bg-green-200 text-[#05BD49] px-3 py-1 rounded-full w-fit">
                      <span class="w-3 h-3 bg-green-500 rounded-full"></span>
                      <span class=" text-xs lg:text-sm">Available</span>
                  </div>

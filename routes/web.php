@@ -26,6 +26,7 @@ Route::get('/available-plots', function () {
     return view('user.frontpage.available-plots.main');
 });
 
+
 // ✅ Added missing routes
 Route::get('/login', function () {
     return view('auth.login');
@@ -88,6 +89,11 @@ Route::get('/example', function () {
     return view('user.frontpage.example');
 })->name('example');
 
+
+
+use App\Http\Controllers\VisualMarkerController;
+
+Route::get('/visual-markers', [VisualMarkerController::class, 'index'])->name('visual.markers');
 
 
 
